@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    verificarParticipacaoSorteio();
+   // verificarParticipacaoSorteio();
+   gerarNumeroDoDia();
   });
 
 const button = document.getElementById('generate');
@@ -16,13 +17,11 @@ function gerarNumeroDoDia() {
     var numeroDoDia = ((diaDoMes % 10) + 1);
     var result = Math.floor(Math.random() * 10) + 1;
 
-    document.querySelector('#number_key > span').textContent = numeroDoDia;
-    document.querySelector('#result > span').textContent = result;
+    //document.querySelector('#result > span').textContent = result;
 
     if (numeroDoDia == result){
         result = "VOCÊ GANHOU UM CHOPP"
         document.querySelector('#result > span').textContent = result;
- 
     }
     
   }
@@ -33,7 +32,8 @@ function gerarNumeroDoDia() {
     
     if (jaParticipou) {
       // Dispositivo já participou do sorteio
-      alert("Este dispositivo já participou do sorteio.");
+      alerta = "Este dispositivo já participou do sorteio.";
+      document.querySelector('#result > span').textContent = alerta;
       return false; // Impede a participação no sorteio novamente
     } else {
       // Primeira participação no sorteio
