@@ -8,81 +8,43 @@
     
 }
 
-body {
-    background-color: #121214;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.logo img {
+    width: 150px; /* Define um tamanho para a logo. Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
-.container{
-    background-color: #343439;
-    padding: 30px 40px;
-    min-width: 470px;
-    color: #efefef;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0+389);
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+.logo {
+    text-align: center; /* Centraliza a logo */
+    margin-bottom: 20px; /* Espaço abaixo da logo */
 }
 
-.container h2{
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 20px;
+.logo img {
+    width: 150px; /* Define um tamanho para a logo. Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
-.input-group{
-    display: flex;
-    padding: 20px 0px;
-    gap: 50px;
+.rules {
+    background-color: #f2f2f2; /* Cor de fundo para a seção de regras */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaço interno */
+    margin-top: 20px; /* Espaço acima da seção de regras */
 }
 
-.input-field {
-    display: flex;
-    flex-direction: column;
+.rules h3 {
+    color: #333; /* Cor do título das regras */
+    margin-bottom: 15px; /* Espaço abaixo do título */
 }
 
-.input-field label {
-    font-weight: bold;
-    margin-bottom: 18px;
-    font-size: 18px;
+.rules ul {
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    padding: 0;
 }
 
-.input-field input {
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid #7336ff;
-    font-size: 18px;
-    border-radius: 2px;
-    padding: 5px;
-    color: #fff;
-}
-
-.input-field input:focus{
-    outline: none;
-    border-bottom: 3px solid #7336ff;
-
-}
-
-#generate{
-    background-color: #7336ff;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 4px;
-    width: 100%;
-    margin: 20px 0px;
-    color: #fff;
-    font-weight: 18px;
-    cursor: pointer;
-}
-
-#result {
-    font-size: 50px;
-    font-weight: 600;
+.rules li {
+    background-color: #ffffff; /* Cor de fundo para cada regra */
+    border: 1px solid #ddd; /* Borda para cada regra */
+    border-radius: 5px; /* Bordas arredondadas para cada regra */
+    padding: 10px; /* Espaço interno para cada regra */
+    margin-bottom: 10px; /* Espaço entre as regras */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave para cada regra */
 }
