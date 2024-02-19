@@ -12,39 +12,77 @@
     width: 150px; /* Define um tamanho para a logo. Ajuste conforme necessário */
     height: auto; /* Mantém a proporção da imagem */
 }
-
-.logo {
-    text-align: center; /* Centraliza a logo */
-    margin-bottom: 20px; /* Espaço abaixo da logo */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .logo img {
-    width: 150px; /* Define um tamanho para a logo. Ajuste conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
+    display: block;
+    margin: 0 auto;
+    width: 150px; /* Ajuste conforme a necessidade */
+    transition: transform 0.5s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 300;
+}
+
+#result {
+    background-color: #e9ecef;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 5px;
 }
 
 .rules {
-    background-color: #f2f2f2; /* Cor de fundo para a seção de regras */
-    border-radius: 10px; /* Bordas arredondadas */
-    padding: 20px; /* Espaço interno */
-    margin-top: 20px; /* Espaço acima da seção de regras */
+    background: linear-gradient(145deg, #d2e1ff, #e6eeff);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .rules h3 {
-    color: #333; /* Cor do título das regras */
-    margin-bottom: 15px; /* Espaço abaixo do título */
+    margin-bottom: 10px;
+    color: #333;
 }
 
 .rules ul {
-    list-style-type: none; /* Remove os marcadores padrão da lista */
-    padding: 0;
+    list-style-position: inside;
 }
 
 .rules li {
-    background-color: #ffffff; /* Cor de fundo para cada regra */
-    border: 1px solid #ddd; /* Borda para cada regra */
-    border-radius: 5px; /* Bordas arredondadas para cada regra */
-    padding: 10px; /* Espaço interno para cada regra */
-    margin-bottom: 10px; /* Espaço entre as regras */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave para cada regra */
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+/* Adicionando um pouco de animação ao carregar a página */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeInUp 1s ease-out;
 }
