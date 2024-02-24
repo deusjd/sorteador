@@ -11,27 +11,40 @@
     <div class="container">
         <!-- Logo do App -->
         <div class="logo">
-            <img src="assets/images/logo.png" alt="Logo do App">
+            <img src="assets/logo.png" alt="Logo do App">
         </div>
 
         <h2>Sorteio Favorito</h2>
 
         <!-- Div para o texto de "Não Foi Dessa Vez!" -->
         <div id="result">
-            <span>Não Foi dessa vez!</span>
+            <span>Está Com Sorte?</span>
         </div>
 
         <!-- Regras do Sorteio -->
-        <div class="rules">
-            <h3>Regras do Sorteio</h3>
-            <ul>
-                <li>Regra 1: Descrição da regra 1.</li>
-                <li>Regra 2: Descrição da regra 2.</li>
-                <li>Regra 3: Descrição da regra 3.</li>
-                <!-- Adicione mais regras conforme necessário -->
-            </ul>
+        <div class="rules" id="rulesButton">
+            <h3>Ver Regras</h3>
         </div>
     </div>
+
+    <!-- Estrutura do Pop-up -->
+    <div id="rulesPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h3>Regras do Sorteio</h3>
+            <!-- Conteúdo das regras -->
+            <form id="popupForm">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required>
+                <div>
+                    <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                    <label for="agreeTerms">Concordo com os <a href="URL_PARA_TERMOS_DE_USO" target="_blank">Termos de Uso</a>.</label>
+                </div>
+                <button type="button" id="submitBtn">Confirmar</button>
+            </form>
+        </div>
+    </div>
+
     <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
