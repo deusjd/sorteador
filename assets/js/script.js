@@ -3,7 +3,6 @@ window.onload = function() {
 };
 
 
-
 var popup = document.getElementById("rulesPopup");
 var span = document.getElementsByClassName("close")[0]; // O botão de fechar
 
@@ -13,6 +12,30 @@ window.onclick = function(event) {
       event.preventDefault(); // Mantém o pop-up aberto
   }
 }
+
+async function carregarConfiguracoes() {
+  try {
+    const response = await fetch('config.json'); // Caminho para o seu arquivo config.json
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const config = await response.json();
+
+    // Agora você pode usar `config` para acessar as configurações
+    console.log(config.rangeNumeros.minimo); // Exemplo de acesso
+    console.log(config.mensagens.ganhou); // Exemplo de acesso
+
+    // Aqui você pode substituir os valores diretamente no seu código existente
+    // Por exemplo, substituindo os valores fixos por aqueles definidos no arquivo de configuração
+    // Exemplo: var result = Math.floor(Math.random() * (config.rangeNumeros.maximo + 1));
+
+  } catch (e) {
+    console.error("Não foi possível carregar o arquivo de configuração:", e);
+  }
+}
+
+// Lembre-se de chamar a função `carregarConfiguracoes` no início do seu script ou quando for necessário
+carregarConfiguracoes();
 
 // Função para validar o formulário
 function validateForm() {

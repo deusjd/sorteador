@@ -1,0 +1,10 @@
+{
+    "rangeNumeros": {
+      "minimo": 0,
+      "maximo": 10
+    },
+    "mensagens": {
+      "ganhou": "VOCÊ GANHOU UM CHOPP 🍺🍺🍺",
+      "naoGanhou": "Não foi dessa vez. 😢"
+    }
+  }
