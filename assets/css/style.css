@@ -114,7 +114,7 @@ input[type="text"]:focus, input[type="tel"]:focus {
 }
 
 button {
-    background-color: #4CAF50; /* Cor de fundo */
+    background-color: #191a38; /* Cor de fundo */
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -125,7 +125,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    background-color: #191a38; /* Cor de fundo ao passar o mouse */
 }
 
 .popup {
@@ -241,5 +241,19 @@ button:hover {
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+.form-group {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    gap: 10px; /* Espaçamento entre o label e o campo de entrada */
+}
+
+label {
+    margin-right: 5px; /* Ajuste conforme necessário para mais espaço */
+}
+
+input[type="tel"] {
+    flex-grow: 1; /* O campo de entrada ocupa o espaço restante */
 }
 

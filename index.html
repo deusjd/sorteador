@@ -32,6 +32,7 @@
             <h4>1. Será válido apenas um prêmio por CPF.</h4>
             <h4>2. O prêmio deve ser resgatado no mesmo dia do sorteio.</h4>
             <h4>3. O Prêmio será válido apenas para comandas abertas no estabelecimeto com consumo</h4>
+            <h6><a href="#">Termos e Condições para o sorteio</a>.</h6>
         </div>
     </div>
 
@@ -46,9 +47,9 @@
             <span class="close">&times;</span>
             <h3>Dados para o sorteio</h3>
             <!-- Conteúdo das regras -->
-            <form id="sorteioForm">
+            <form id="form-group">
                 <label for="nome">CPF:</label>
-                <input type="text" id="cpf" name="cpf" required>
+                <input type="tel" id="cpf" name="cpf" pattern="\d{11}" placeholder="Digite seu CPF" title="Digite um CPF válido com 11 dígitos, sem pontos ou traços">
             
                 <div class="checkbox-container">
                     <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
