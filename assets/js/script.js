@@ -1,7 +1,6 @@
-document.addEventListener("DOMContentLoaded", function() {
-  // Mostra o pop-up automaticamente quando a página é carregada
+window.onload = function() {
   document.getElementById("rulesPopup").style.display = "block";
-});
+};
 
 var popup = document.getElementById("rulesPopup");
 var span = document.getElementsByClassName("close")[0]; // O botão de fechar
