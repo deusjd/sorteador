@@ -10,16 +10,15 @@
 <body>
     <div class="container">
         <!-- Logo do App -->
-        <div class="logos-container">
-            <div class="logo">
-                <img src="/assets/logo.png" alt="Logo Atual">
+        <div class="container">
+            <!-- Logo do App Centralizada -->
+            <div class="logo-centralizada">
+                <img src="/assets/images/logo.png" alt="Logo">
             </div>
-            <div class="partner-logo">
-                <img src="/assets/logo copy.png" alt="Logo do Parceiro">
-            </div>
+            <!-- O restante do seu HTML segue aqui -->
         </div>
 
-        <h2>Sorteio Favorito</h2>
+        <h1>Sorteio Favorito</h1>
 
         <!-- Div para o texto de "Não Foi Dessa Vez!" -->
         <div id="result">
@@ -29,8 +28,16 @@
 
         <!-- Regras do Sorteio -->
         <div class="rules" id="rulesButton">
-            <h3>Ver Regras</h3>
+            <h2>Regras</h2>
+            <h4>1. Será válido apenas um prêmio por CPF.</h4>
+            <h4>2. O prêmio deve ser resgatado no mesmo dia do sorteio.</h4>
+            <h4>3. O Prêmio será válido apenas para comandas abertas no estabelecimeto com consumo</h4>
         </div>
+    </div>
+
+    <div id="countdownContainer" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center;">
+        <img src="/assets/images/fundoSorteio.png" alt="Contagem Regressiva" style="width:300px; height:auto; position:relative;">
+        <div id="countdownTimer" style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); color:white; font-size:20px;">5</div>
     </div>
 
     <!-- Estrutura do Pop-up -->
@@ -48,6 +55,14 @@
                 </div>
                 <button type="button" id="submitBtn">Confirmar</button>
             </form>
+        </div>
+    </div>
+
+    <!-- Estrutura do Pop-up de Contagem Regressiva -->
+    <div id="countdownPopup" class="popup-round">
+        <div class="popup-content-round">
+            <span class="close-countdown">&times;</span>
+            <div id="countdownTimer" class="countdown-timer"></div>
         </div>
     </div>
 

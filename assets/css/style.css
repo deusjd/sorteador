@@ -7,27 +7,25 @@
     box-sizing: border-box;
 }
 
-.partner-logo img {
-    width: 150px; /* Define um tamanho para a logo do parceiro. Ajuste conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
-    transition: transform 0.5s ease; /* Efeito suave ao passar o mouse */
-}
-
-.partner-logo img:hover {
-    width: 150px; /* Define um tamanho para a logo do parceiro. Ajuste conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
-    transition: transform 0.5s ease; /* Efeito suave ao passar o mouse */
-}
-
-.logos-container {
+.logo-centralizada {
     display: flex;
-    justify-content: space-between; /* Espaço igual entre os itens e nas extremidades */
-    align-items: center; /* Centraliza verticalmente */
-    padding: 20px; /* Espaçamento interno para afastar um pouco as logos das bordas */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 20px 0; /* Adiciona um pouco de espaço acima e abaixo da logo */
+}
+
+.logo-centralizada img {
+    max-width: 100%; /* Garante que a logo seja responsiva e não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    /* Defina um tamanho máximo que você considere agradável para a logo */
+    max-height: 120px; /* Exemplo de altura máxima para manter a logo em um tamanho agradável */
 }
 
 body {
-    background-color: #f4f4f4; /* Adiciona uma cor de fundo suave para a página */
+    background-image: url('../images/bg.png'); /* Caminho para sua imagem de fundo */
+    background-size: cover; /* Garante que a imagem de fundo cubra toda a página */
+    background-position: center; /* Centraliza a imagem de fundo na página */
+    background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+    background-attachment: fixed; /* Faz com que a imagem de fundo fique fixa ao rolar a página */
     color: #333; /* Cor padrão do texto */
     line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
 }
@@ -36,9 +34,7 @@ body {
     max-width: 800px;
     margin: 20px auto; /* Aumenta a margem superior e inferior */
     padding: 20px;
-    background: white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border-radius: 8px;
+    border-radius: 50px;
     overflow: hidden;
     animation: fadeInUp 1s ease-out;
 }
@@ -58,7 +54,15 @@ h2 {
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
-    color: #007bff; /* Cor azul para destacar os títulos */
+    color: #191a38; /* Cor azul para destacar os títulos */
+    font-weight: 700; /* Torna o título mais impactante */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #191a38; /* Cor azul para destacar os títulos */
     font-weight: 700; /* Torna o título mais impactante */
 }
 
@@ -139,4 +143,61 @@ h2 {
     h2 {
         font-size: 1.5em; /* Ajusta o tamanho do título para telas menores */
     }
+}
+
+.popup-round {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%; /* Torna o popup redondo */
+    background-color: rgba(0,0,0,0.4); /* Fundo semitransparente */
+    width: 300px;
+    height: 300px; /* Tamanho do popup */
+}
+
+.popup-content-round {
+    position: relative;
+    border-radius: 50%; /* Mantém o conteúdo também redondo */
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+}
+
+.countdown-timer {
+    font-size: 2em; /* Tamanho da fonte para a contagem regressiva */
+    color: var(--deep-blue); /* Cor do texto, usando a cor da sua marca */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#countdownContainer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+#countdownContainer img {
+    width: 300px;
+    height: auto;
+    position: relative;
+}
+  
+#countdownTimer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
 }

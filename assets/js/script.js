@@ -2,6 +2,7 @@ window.onload = function() {
   document.getElementById("rulesPopup").style.display = "block";
 };
 
+
 var popup = document.getElementById("rulesPopup");
 var span = document.getElementsByClassName("close")[0]; // O botão de fechar
 
@@ -38,26 +39,36 @@ span.onclick = function(event) {
   validateForm(); // Tenta validar o formulário
 }
 
-function gerarNumeroDoDia(cpf) { // Modificado para aceitar o CPF como parâmetro
-  var dataAtual = new Date();
-  var diaDoMes = dataAtual.getDate();
-  
-  var numeroDoDia = ((diaDoMes % 10) + 1);
-  var result = Math.floor(Math.random() * 10) + 1;
-  var resultadoSorteio = numeroDoDia === result ? "Ganhou" : "Não ganhou"; // Adicionado para definir o resultado
+function gerarNumeroDoDia(cpf) {
+  // Exibe o container da contagem regressiva
+  document.getElementById("countdownContainer").style.display = "block";
 
-  // Verifica se o usuário ganhou o sorteio
-  if (resultadoSorteio === "Ganhou"){
-      // Usuário ganhou o sorteio
-      document.querySelector('#result > span').textContent = "VOCÊ GANHOU UM CHOPP";
-  } else {
-      // Usuário não ganhou o sorteio
-      document.querySelector('#result > span').textContent = "Não foi dessa vez. Tente novamente amanhã!";
-  }
+  let counter = 5; // Inicia a contagem regressiva de 5 segundos
+  const countdownElement = document.getElementById("countdownTimer");
+  countdownElement.textContent = counter; // Exibe o número inicial
 
-  // Chamadas movidas para dentro desta função
-  salvarDadosSorteio(cpf, diaDoMes, result, resultadoSorteio);
-  enviarMensagemDiscord(cpf, diaDoMes, result, resultadoSorteio);
+  let intervalId = setInterval(() => {
+    counter--;
+    countdownElement.textContent = counter;
+    if (counter <= 0) {
+      clearInterval(intervalId); // Para a contagem regressiva
+      mostrarResultadoSorteio(cpf);
+      document.getElementById("countdownContainer").style.display = "none"; // Oculta o container após o término
+    }
+  }, 1000); // Atualiza a contagem a cada segundo
+}
+
+function mostrarResultadoSorteio(cpf) {
+  var resultadoSorteio = gerarResultadoSorteio(); // Função hipotética que determina se o usuário ganhou
+
+  // Atualiza o conteúdo do pop-up com o resultado do sorteio
+  const countdownElement = document.getElementById("countdownTimer");
+  countdownElement.textContent = resultadoSorteio ? "VOCÊ GANHOU UM CHOPP 🍺🍺🍺" : "Não foi dessa vez. 😢";
+
+  // Fecha o pop-up após alguns segundos
+  setTimeout(() => {
+      document.getElementById("countdownPopup").style.display = "none";
+  }, 5000); // Mantém o resultado visível por 5 segundos antes de fechar
 }
 
 function salvarDadosSorteio(cpf, numeroDoDia, numeroSorteado, resultado) {
@@ -126,9 +137,9 @@ function mostrarResultadoSorteio(cpf) {
 
   // Atualiza o conteúdo da página com o resultado do sorteio
   if (resultadoSorteio === "Ganhou") {
-      document.querySelector('#result > span').textContent = "VOCÊ GANHOU UM CHOPP";
+      document.querySelector('#result > span').textContent = "VOCÊ GANHOU UM CHOPP 🍺🍺🍺";
   } else {
-      document.querySelector('#result > span').textContent = "Não foi dessa vez. Tente novamente amanhã!";
+      document.querySelector('#result > span').textContent = "Não foi dessa vez. 😢";
   }
 
   // Continua com as chamadas para salvar os dados do sorteio e enviar mensagem para o Discord
