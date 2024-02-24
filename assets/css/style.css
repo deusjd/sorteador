@@ -9,24 +9,18 @@
 
 #logo-header {
     background-image: url('../images/logo.png');
-    height: 100px; /* Altura do header */
-    width: 200px; /* Largura do header */
+    height: 150px; /* Altura do header */
+    width: 300px; /* Largura do header */
     background-size: contain; /* Faz com que a imagem de fundo se ajuste ao tamanho do elemento */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
-    background-position: center; /* Centraliza a imagem de fundo no elemento */
+    background-position: center center; /* Centraliza a imagem de fundo no elemento */
 }
 
-.logo-centralizada {
+.container {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
-    padding: 20px 0; /* Adiciona um pouco de espaço acima e abaixo da logo */
-}
-
-.logo-centralizada img {
-    max-width: 100%; /* Garante que a logo seja responsiva e não ultrapasse o contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    /* Defina um tamanho máximo que você considere agradável para a logo */
-    max-height: 120px; /* Exemplo de altura máxima para manter a logo em um tamanho agradável */
+    align-items: top; /* Centraliza verticalmente */
+    height: 15vh; /* Ajuste conforme necessário */
 }
 
 body {
@@ -37,26 +31,6 @@ body {
     background-attachment: fixed; /* Faz com que a imagem de fundo fique fixa ao rolar a página */
     color: #333; /* Cor padrão do texto */
     line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
-}
-
-.container {
-    max-width: 800px;
-    margin: 20px auto; /* Aumenta a margem superior e inferior */
-    padding: 20px;
-    border-radius: 50px;
-    overflow: hidden;
-    animation: fadeInUp 1s ease-out;
-}
-
-.logo img {
-    display: block;
-    margin: 0 auto;
-    width: 150px;
-    transition: transform 0.5s ease;
-}
-
-.logo img:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
 
 h2 {
