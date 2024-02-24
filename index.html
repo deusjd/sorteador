@@ -44,16 +44,18 @@
     <div id="rulesPopup" class="popup">
         <div class="popup-content">
             <span class="close">&times;</span>
-            <h3>Regras do Sorteio</h3>
+            <h3>Dados para o sorteio</h3>
             <!-- Conteúdo das regras -->
-            <form id="popupForm">
-                <label for="cpf">CPF:</label>
-                <input type="tel" id="cpf" name="cpf" placeholder="000.000.000-00" required>
-                <div>
+            <form id="sorteioForm">
+                <label for="nome">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required>
+            
+                <div class="checkbox-container">
                     <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
-                    <label for="agreeTerms">Concordo com os <a href="URL_PARA_TERMOS_DE_USO" target="_blank">Termos de Uso</a>.</label>
+                    <label for="agreeTerms">Eu concordo com os <a href="#">termos e condições</a>.</label>
                 </div>
-                <button type="button" id="submitBtn">Confirmar</button>
+
+                <button type="button" id="submitBtn">Enviar</button>
             </form>
         </div>
     </div>

@@ -1,6 +1,7 @@
 window.onload = function() {
-  document.getElementById("rulesPopup").style.display = "block";
+  document.getElementById("rulesPopup").style.display = "flex"; // Alterado para "flex" para trabalhar com o novo estilo CSS
 };
+
 
 
 var popup = document.getElementById("rulesPopup");
