@@ -1,0 +1,52 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Uma fonte limpa e moderna */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+    color: #333; /* Cor escura para o texto, melhorando a legibilidade */
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    padding: 20px; /* Espaçamento ao redor do conteúdo da página */
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento abaixo do cabeçalho */
+    color: #444; /* Uma cor ligeiramente mais escura para o título */
+}
+
+main {
+    background: #fff; /* Fundo branco para o conteúdo principal */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o conteúdo */
+    max-width: 800px; /* Largura máxima para melhor leitura */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+section + section {
+    margin-top: 20px; /* Espaçamento entre seções */
+}
+
+h2 {
+    margin-bottom: 10px; /* Espaçamento abaixo dos títulos das seções */
+    color: #666; /* Cor escura para os títulos das seções */
+}
+
+p, ol {
+    margin-bottom: 15px; /* Espaçamento abaixo dos parágrafos e listas */
+}
+
+ol li {
+    margin-bottom: 5px; /* Espaçamento entre itens da lista */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px; /* Espaçamento acima do rodapé */
+    color: #666; /* Cor para o texto do rodapé */
+}
