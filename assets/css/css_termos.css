@@ -50,3 +50,27 @@ footer {
     margin-top: 20px; /* Espaçamento acima do rodapé */
     color: #666; /* Cor para o texto do rodapé */
 }
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #191a38; /* Cor azul para destacar os títulos */
+    font-weight: 700; /* Torna o título mais impactante */
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #191a38; /* Cor azul para destacar os títulos */
+    font-weight: 700; /* Torna o título mais impactante */
+}
+
+h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #191a38; /* Cor azul para destacar os títulos */
+    font-weight: 700; /* Torna o título mais impactante */
+}
