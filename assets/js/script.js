@@ -87,7 +87,12 @@ function salvarDadosSorteio(cpf, numeroDoDia, numeroSorteado, resultado) {
 
 function enviarMensagemDiscord(cpf, numeroDoDia, numeroSorteado, resultado) {
   const webhookUrl = "https://discord.com/api/webhooks/1211002858242314311/jWXj2f05181NVe59utAjDUyecpFFouT0RO1PuLAb2wQGDgh0VOW_JZh7lXlCgKEsvvD3";
-  const mensagem = `CPF: ${cpf}, Número do Dia: ${numeroDoDia}, Número Sorteado: ${numeroSorteado}, Resultado: ${resultado}`;
+  const mensagem = `
+  🍀 Sorteio realizado
+  | CPF: ${cpf}
+  | Número do Dia: ${numeroDoDia} 
+  | Número Sorteado: ${numeroSorteado} 
+  | Resultado: ${resultado}`;
 
   fetch(webhookUrl, {
       method: 'POST',
@@ -103,6 +108,15 @@ function enviarMensagemDiscord(cpf, numeroDoDia, numeroSorteado, resultado) {
 }
 
 function gerarNumeroDoDia(cpf) {
+  var dataAtual = new Date();
+  var chaveSorteio = 'sorteio-' + cpf + '-' + dataAtual.toISOString().split('T')[0]; // Cria uma chave única por dia para cada CPF
+
+  // Verifica se o sorteio já foi realizado hoje para este CPF
+  if (localStorage.getItem(chaveSorteio)) {
+      alert("Você já participou do sorteio hoje!");
+      return; // Interrompe a execução da função se o sorteio já foi realizado
+  }
+
   // Inicia a contagem regressiva de 5 segundos
   let counter = 5;
   const countdownElement = document.getElementById("countdown");
@@ -116,6 +130,7 @@ function gerarNumeroDoDia(cpf) {
           clearInterval(intervalId); // Para a contagem regressiva
           countdownElement.style.display = "none"; // Oculta o contador
           mostrarResultadoSorteio(cpf); // Chama a função para mostrar o resultado
+          localStorage.setItem(chaveSorteio, true); // Marca que o sorteio foi realizado hoje para este CPF
       }
   }, 1000); // Atualiza a contagem a cada segundo
 }
