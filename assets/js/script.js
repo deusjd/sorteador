@@ -89,3 +89,49 @@ function enviarMensagemDiscord(cpf, numeroDoDia, numeroSorteado, resultado) {
   .then(response => console.log("Mensagem enviada com sucesso."))
   .catch(error => console.error("Erro ao enviar mensagem.", error));
 }
+
+function gerarNumeroDoDia(cpf) {
+  // Inicia a contagem regressiva de 5 segundos
+  let counter = 5;
+  const countdownElement = document.getElementById("countdown");
+  countdownElement.style.display = "block"; // Exibe o elemento de contagem regressiva
+  countdownElement.textContent = "Preparando resultado... " + counter;
+
+  let intervalId = setInterval(() => {
+      counter--;
+      countdownElement.textContent = "Preparando resultado... " + counter;
+      if (counter <= 0) {
+          clearInterval(intervalId); // Para a contagem regressiva
+          countdownElement.style.display = "none"; // Oculta o contador
+          mostrarResultadoSorteio(cpf); // Chama a função para mostrar o resultado
+      }
+  }, 1000); // Atualiza a contagem a cada segundo
+}
+
+function mostrarResultadoSorteio(cpf) {
+  var dataAtual = new Date();
+  var diaDoMes = dataAtual.getDate();
+
+  // Garantir que o número do dia esteja entre 0 e 10
+  // Como o dia do mês pode ser de 1 a 31, usamos o módulo (%) por 11 para obter um número entre 0 e 10
+  var numeroDoDia = dataAtual.getDate() % 11; // Garante que esteja entre 0 e 10
+
+  // Gerar um número aleatório entre 0 e 10
+  // Math.random() gera um número entre 0 (inclusivo) e 1 (exclusivo), então multiplicamos por 11
+  // para obter um número no intervalo [0, 11) e usamos Math.floor() para arredondar para baixo,
+  // resultando em um número inteiro entre 0 e 10
+  var result = Math.floor(Math.random() * 11);
+
+  var resultadoSorteio = numeroDoDia === result ? "Ganhou" : "Não ganhou";
+
+  // Atualiza o conteúdo da página com o resultado do sorteio
+  if (resultadoSorteio === "Ganhou") {
+      document.querySelector('#result > span').textContent = "VOCÊ GANHOU UM CHOPP";
+  } else {
+      document.querySelector('#result > span').textContent = "Não foi dessa vez. Tente novamente amanhã!";
+  }
+
+  // Continua com as chamadas para salvar os dados do sorteio e enviar mensagem para o Discord
+  salvarDadosSorteio(cpf, diaDoMes, result, resultadoSorteio);
+  enviarMensagemDiscord(cpf, numeroDoDia, result, resultadoSorteio);
+}

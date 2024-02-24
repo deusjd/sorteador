@@ -10,8 +10,13 @@
 <body>
     <div class="container">
         <!-- Logo do App -->
-        <div class="logo">
-            <img src="assets/logo.png" alt="Logo do App">
+        <div class="logos-container">
+            <div class="logo">
+                <img src="/assets/logo.png" alt="Logo Atual">
+            </div>
+            <div class="partner-logo">
+                <img src="/assets/logo copy.png" alt="Logo do Parceiro">
+            </div>
         </div>
 
         <h2>Sorteio Favorito</h2>
@@ -19,6 +24,7 @@
         <!-- Div para o texto de "Não Foi Dessa Vez!" -->
         <div id="result">
             <span>Está Com Sorte?</span>
+            <div id="countdown"></div> <!-- Elemento para a contagem regressiva -->
         </div>
 
         <!-- Regras do Sorteio -->
@@ -35,7 +41,7 @@
             <!-- Conteúdo das regras -->
             <form id="popupForm">
                 <label for="cpf">CPF:</label>
-                <input type="text" id="cpf" name="cpf" required>
+                <input type="tel" id="cpf" name="cpf" placeholder="000.000.000-00" required>
                 <div>
                     <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
                     <label for="agreeTerms">Concordo com os <a href="URL_PARA_TERMOS_DE_USO" target="_blank">Termos de Uso</a>.</label>
