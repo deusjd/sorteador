@@ -16,6 +16,24 @@
     background-position: center center; /* Centraliza a imagem de fundo no elemento */
 }
 
+#logo-footer {
+    position: fixed; /* Fixa o elemento em uma posição na tela */
+    left: 50%; /* Alinha o centro do elemento à metade da largura da tela */
+    bottom: 0; /* Alinha o elemento na parte inferior */
+    transform: translateX(-50%); /* Ajusta o posicionamento para centralizar verdadeiramente */
+    width: 200px; /* Largura da logo. Ajuste conforme necessário */
+    height: 100px; /* Altura da logo. Ajuste conforme necessário */
+    background-image: url('../images/logobranca2.png'); /* Define a imagem de fundo */
+    background-size: contain; /* Garante que a imagem de fundo se ajuste ao tamanho do elemento */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem de fundo no elemento */
+}
+
+#logo-footer img {
+    width: 100%; /* Faz a imagem preencher todo o espaço disponível */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
 .container {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
@@ -29,7 +47,7 @@ body {
     background-position: center; /* Centraliza a imagem de fundo na página */
     background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
     background-attachment: fixed; /* Faz com que a imagem de fundo fique fixa ao rolar a página */
-    color: #333; /* Cor padrão do texto */
+    color: #000000; /* Cor padrão do texto */
     line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
 }
 

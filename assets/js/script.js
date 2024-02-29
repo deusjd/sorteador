@@ -37,11 +37,16 @@ async function carregarConfiguracoes() {
 // Lembre-se de chamar a função `carregarConfiguracoes` no início do seu script ou quando for necessário
 carregarConfiguracoes();
 
-// Função para validar o formulário
 function validateForm() {
   var cpf = document.getElementById("cpf").value;
   var agreeTerms = document.getElementById("agreeTerms").checked;
   
+  // Adiciona a chamada para a função de validação de CPF
+  if (!validaCPF(cpf)) {
+    alert("Por favor, insira um CPF válido.");
+    return; // Interrompe a execução se o CPF for inválido
+  }
+
   // Verifica se o CPF está preenchido e o checkbox marcado
   if(cpf.trim() !== "" && agreeTerms) {
       document.getElementById("rulesPopup").style.display = "none";
@@ -184,4 +189,27 @@ function mostrarResultadoSorteio(cpf) {
   // Continua com as chamadas para salvar os dados do sorteio e enviar mensagem para o Discord
   salvarDadosSorteio(cpf, diaDoMes, result, resultadoSorteio);
   enviarMensagemDiscord(cpf, numeroDoDia, result, resultadoSorteio);
+}
+
+function validaCPF(cpf) {
+  cpf = cpf.replace(/[^\d]+/g, ''); // Remove caracteres não numéricos
+  if (cpf.length !== 11 || !!cpf.match(/(\d)\1{10}/)) return false; // Verifica se tem 11 dígitos ou se são todos iguais
+
+  let soma = 0;
+  let resto;
+
+  for (let i = 1; i <= 9; i++) soma += parseInt(cpf.substring(i - 1, i)) * (11 - i);
+  resto = (soma * 10) % 11;
+
+  if ((resto === 10) || (resto === 11)) resto = 0;
+  if (resto !== parseInt(cpf.substring(9, 10))) return false;
+
+  soma = 0;
+  for (let i = 1; i <= 10; i++) soma += parseInt(cpf.substring(i - 1, i)) * (12 - i);
+  resto = (soma * 10) % 11;
+
+  if ((resto === 10) || (resto === 11)) resto = 0;
+  if (resto !== parseInt(cpf.substring(10, 11))) return false;
+
+  return true;
 }
