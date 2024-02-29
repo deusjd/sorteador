@@ -13,30 +13,6 @@ window.onclick = function(event) {
   }
 }
 
-async function carregarConfiguracoes() {
-  try {
-    const response = await fetch('config.json'); // Caminho para o seu arquivo config.json
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const config = await response.json();
-
-    // Agora você pode usar `config` para acessar as configurações
-    console.log(config.rangeNumeros.minimo); // Exemplo de acesso
-    console.log(config.mensagens.ganhou); // Exemplo de acesso
-
-    // Aqui você pode substituir os valores diretamente no seu código existente
-    // Por exemplo, substituindo os valores fixos por aqueles definidos no arquivo de configuração
-    // Exemplo: var result = Math.floor(Math.random() * (config.rangeNumeros.maximo + 1));
-
-  } catch (e) {
-    console.error("Não foi possível carregar o arquivo de configuração:", e);
-  }
-}
-
-// Lembre-se de chamar a função `carregarConfiguracoes` no início do seu script ou quando for necessário
-carregarConfiguracoes();
-
 function validateForm() {
   var cpf = document.getElementById("cpf").value;
   var agreeTerms = document.getElementById("agreeTerms").checked;
@@ -85,19 +61,6 @@ function gerarNumeroDoDia(cpf) {
       document.getElementById("countdownContainer").style.display = "none"; // Oculta o container após o término
     }
   }, 1000); // Atualiza a contagem a cada segundo
-}
-
-function mostrarResultadoSorteio(cpf) {
-  var resultadoSorteio = gerarResultadoSorteio(); // Função hipotética que determina se o usuário ganhou
-
-  // Atualiza o conteúdo do pop-up com o resultado do sorteio
-  const countdownElement = document.getElementById("countdownTimer");
-  countdownElement.textContent = resultadoSorteio ? "VOCÊ GANHOU UM CHOPP 🍺🍺🍺" : "Não foi dessa vez. 😢";
-
-  // Fecha o pop-up após alguns segundos
-  setTimeout(() => {
-      document.getElementById("countdownPopup").style.display = "none";
-  }, 5000); // Mantém o resultado visível por 5 segundos antes de fechar
 }
 
 function salvarDadosSorteio(cpf, numeroDoDia, numeroSorteado, resultado) {
@@ -169,19 +132,41 @@ function mostrarResultadoSorteio(cpf) {
 
   // Garantir que o número do dia esteja entre 0 e 10
   // Como o dia do mês pode ser de 1 a 31, usamos o módulo (%) por 11 para obter um número entre 0 e 10
-  var numeroDoDia = dataAtual.getDate() % 11; // Garante que esteja entre 0 e 10
+  var numeroDoDia = 1;//dataAtual.getDate() % 11; // Garante que esteja entre 0 e 10
 
   // Gerar um número aleatório entre 0 e 10
   // Math.random() gera um número entre 0 (inclusivo) e 1 (exclusivo), então multiplicamos por 11
   // para obter um número no intervalo [0, 11) e usamos Math.floor() para arredondar para baixo,
   // resultando em um número inteiro entre 0 e 10
-  var result = Math.floor(Math.random() * 11);
+  var result = 1; //Math.floor(Math.random() * 11);
 
   var resultadoSorteio = numeroDoDia === result ? "Ganhou" : "Não ganhou";
 
+
   // Atualiza o conteúdo da página com o resultado do sorteio
   if (resultadoSorteio === "Ganhou") {
-      document.querySelector('#result > span').textContent = "VOCÊ GANHOU UM CHOPP 🍺🍺🍺";
+    var imagemPremio = document.querySelector('.imagem-premio');
+    var elementoPremio = document.getElementById('premio');
+
+    imagemPremio.style.display = 'block'; // Faz a imagem aparecer
+      setTimeout(() => {
+          imagemPremio.style.transform = 'translate(-50%, -50%) scale(1)'; // Crescimento
+      }, 100); // Um pequeno delay para garantir que a transição ocorra
+
+      setTimeout(() => {
+            // Inicia a animação de desaparecimento
+            imagemPremio.classList.add('desaparecer');
+
+            // Espera a imagem desaparecer para revelar o prêmio
+            setTimeout(() => {
+                imagemPremio.style.display = 'none'; // Esconde a imagem após o desaparecimento
+                elementoPremio.style.display = 'block'; // Mostra o prêmio
+            }, 2000); // Este valor deve coincidir com a duração da animação de desaparecimento
+
+            document.querySelector('#result > span').textContent = "VOCÊ GANHOU UM CHOPP 🍺🍺🍺";
+        }, 3000); // Ajuste este valor conforme necessário para o tempo antes da imagem começar a desaparecer
+
+
   } else {
       document.querySelector('#result > span').textContent = "Não foi dessa vez. 😢";
   }
