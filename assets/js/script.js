@@ -85,7 +85,7 @@ function salvarDadosSorteio(cpf, numeroDoDia, numeroSorteado, resultado) {
 }
 
 function enviarMensagemDiscord(cpf, numeroDoDia, numeroSorteado, resultado, mensagem_result) {
-  const webhookUrl_nao_ganhou = "https://discord.com/api/webhooks/1211002858242314311/jWXj2f05181NVe59utAjDUyecpFFouT0RO1PuLAb2wQGDgh0VOW_JZh7lXlCgKEsvvD3";
+  const webhookUrl_nao_ganhou = "https://discord.com/api/webhooks/1214164460198174821/czAvUIv8OIY4LDL1eCXWEBUO-MG2xe299tjpI6d0CWQEHX3Dr5VmaWy8v2v4CkStew3g";
   const webhooks_ganhou = "https://discord.com/api/webhooks/1214155641002922015/oXZ91DU401E87kK-HRslmLH0ETFrBv_bDnu4DZy5m3O6gVHy0X3PUgXLNSJMbnzLC72Z"
   const mensagem = `
   🍀 Sorteio realizado
