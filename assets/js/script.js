@@ -1,5 +1,13 @@
+// Habilitar validação cpf
+//habilitar sorteio no memso dia cpf
+
 window.onload = function() {
   document.getElementById("rulesPopup").style.display = "flex"; // Alterado para "flex" para trabalhar com o novo estilo CSS
+      // Define um valor padrão para o campo CPF
+      document.getElementById("cpf").value = "08765920945"; // Substitua '12345678901' pelo valor padrão desejado
+
+      // Marca o checkbox como checado
+      document.getElementById("agreeTerms").checked = true;
 };
 
 
@@ -17,7 +25,7 @@ function validateForm() {
   var cpf = document.getElementById("cpf").value;
   var agreeTerms = document.getElementById("agreeTerms").checked;
   
-  // Adiciona a chamada para a função de validação de CPF
+ // Adiciona a chamada para a função de validação de CPF
   if (!validaCPF(cpf)) {
     alert("Por favor, insira um CPF válido.");
     return; // Interrompe a execução se o CPF for inválido
@@ -76,14 +84,23 @@ function salvarDadosSorteio(cpf, numeroDoDia, numeroSorteado, resultado) {
   localStorage.setItem('sorteios', JSON.stringify(sorteios));
 }
 
-function enviarMensagemDiscord(cpf, numeroDoDia, numeroSorteado, resultado) {
-  const webhookUrl = "https://discord.com/api/webhooks/1211002858242314311/jWXj2f05181NVe59utAjDUyecpFFouT0RO1PuLAb2wQGDgh0VOW_JZh7lXlCgKEsvvD3";
+function enviarMensagemDiscord(cpf, numeroDoDia, numeroSorteado, resultado, mensagem_result) {
+  const webhookUrl_nao_ganhou = "https://discord.com/api/webhooks/1211002858242314311/jWXj2f05181NVe59utAjDUyecpFFouT0RO1PuLAb2wQGDgh0VOW_JZh7lXlCgKEsvvD3";
+  const webhooks_ganhou = "https://discord.com/api/webhooks/1214155641002922015/oXZ91DU401E87kK-HRslmLH0ETFrBv_bDnu4DZy5m3O6gVHy0X3PUgXLNSJMbnzLC72Z"
   const mensagem = `
   🍀 Sorteio realizado
   | CPF: ${cpf}
   | Número do Dia: ${numeroDoDia} 
   | Número Sorteado: ${numeroSorteado} 
-  | Resultado: ${resultado}`;
+  | Resultado: ${resultado}
+  | Mensagem: ${mensagem_result}`;
+
+
+  if(resultado === "Ganhou") {
+    webhookUrl = webhooks_ganhou;
+  } else {
+    webhookUrl = webhookUrl_nao_ganhou;
+  }
 
   fetch(webhookUrl, {
       method: 'POST',
@@ -103,10 +120,10 @@ function gerarNumeroDoDia(cpf) {
   var chaveSorteio = 'sorteio-' + cpf + '-' + dataAtual.toISOString().split('T')[0]; // Cria uma chave única por dia para cada CPF
 
   // Verifica se o sorteio já foi realizado hoje para este CPF
-  if (localStorage.getItem(chaveSorteio)) {
-      alert("Você já participou do sorteio hoje!");
-      return; // Interrompe a execução da função se o sorteio já foi realizado
-  }
+  // if (localStorage.getItem(chaveSorteio)) {
+  //     alert("Você já participou do sorteio hoje!");
+  //     return; // Interrompe a execução da função se o sorteio já foi realizado
+  // }
 
   // Inicia a contagem regressiva de 5 segundos
   let counter = 5;
@@ -132,15 +149,27 @@ function mostrarResultadoSorteio(cpf) {
 
   // Garantir que o número do dia esteja entre 0 e 10
   // Como o dia do mês pode ser de 1 a 31, usamos o módulo (%) por 11 para obter um número entre 0 e 10
-  var numeroDoDia = 1;//dataAtual.getDate() % 11; // Garante que esteja entre 0 e 10
+  //var numeroDoDia = dataAtual.getDate() % 21; // Garante que esteja entre 0 e 10
+
+  var numeroDoDia = Math.floor(Math.random() * 21);
 
   // Gerar um número aleatório entre 0 e 10
   // Math.random() gera um número entre 0 (inclusivo) e 1 (exclusivo), então multiplicamos por 11
   // para obter um número no intervalo [0, 11) e usamos Math.floor() para arredondar para baixo,
   // resultando em um número inteiro entre 0 e 10
-  var result = 1; //Math.floor(Math.random() * 11);
+  var result = Math.floor(Math.random() * 21);
 
   var resultadoSorteio = numeroDoDia === result ? "Ganhou" : "Não ganhou";
+
+  if (numeroDoDia === result){
+    if(result === 2 ){
+      var mensagem_result = "VOCÊ GANHOU UMA CARTOLA + 1 CHOPP + 1 COPO DO EVENTO!";
+      } else {
+        mensagem_result = "VOCÊ GANHOU 1 CHOPP + 1 COPO DO EVENTO!"
+      }
+    } else {
+      mensagem_result = "Não foi dessa vez, volte amanhã e tente outra vez. 😢"
+    }
 
 
   // Atualiza o conteúdo da página com o resultado do sorteio
@@ -163,17 +192,24 @@ function mostrarResultadoSorteio(cpf) {
                 elementoPremio.style.display = 'block'; // Mostra o prêmio
             }, 2000); // Este valor deve coincidir com a duração da animação de desaparecimento
 
-            document.querySelector('#result > span').textContent = "VOCÊ GANHOU UM CHOPP 🍺🍺🍺";
+            if(result === 2) {
+              mensagem_result = "VOCÊ GANHOU UMA CARTOLA + 1 CHOPP + 1 COPO DO EVENTO!";
+              document.querySelector('#result > span').textContent = mensagem_result;
+            } else {
+              mensagem_result = "VOCÊ GANHOU 1 CHOPP + 1 COPO DO EVENTO!"
+              document.querySelector('#result > span').textContent = mensagem_result;
+            }
         }, 3000); // Ajuste este valor conforme necessário para o tempo antes da imagem começar a desaparecer
 
 
   } else {
-      document.querySelector('#result > span').textContent = "Não foi dessa vez. 😢";
+    mensagem_result = "Não foi dessa vez, volte amanhã e tente outra vez. 😢"
+      document.querySelector('#result > span').textContent = mensagem_result;
   }
 
   // Continua com as chamadas para salvar os dados do sorteio e enviar mensagem para o Discord
   salvarDadosSorteio(cpf, diaDoMes, result, resultadoSorteio);
-  enviarMensagemDiscord(cpf, numeroDoDia, result, resultadoSorteio);
+  enviarMensagemDiscord(cpf, numeroDoDia, result, resultadoSorteio, mensagem_result);
 }
 
 function validaCPF(cpf) {
