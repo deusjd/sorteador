@@ -162,11 +162,8 @@ function mostrarResultadoSorteio(cpf) {
   var resultadoSorteio = numeroDoDia === result ? "Ganhou" : "Não ganhou";
 
   if (numeroDoDia === result){
-    if(result === 2 ){
-      var mensagem_result = "VOCÊ GANHOU UMA CARTOLA + 1 CHOPP + 1 COPO DO EVENTO!";
-      } else {
-        mensagem_result = "VOCÊ GANHOU 1 CHOPP + 1 COPO DO EVENTO!"
-      }
+   
+    mensagem_result = "VOCÊ GANHOU 1 CHOPP + 1 COPO DO EVENTO!"
     } else {
       mensagem_result = "Não foi dessa vez, volte amanhã e tente outra vez. 😢"
     }
@@ -192,13 +189,9 @@ function mostrarResultadoSorteio(cpf) {
                 elementoPremio.style.display = 'block'; // Mostra o prêmio
             }, 2000); // Este valor deve coincidir com a duração da animação de desaparecimento
 
-            if(result === 2) {
-              mensagem_result = "VOCÊ GANHOU UMA CARTOLA + 1 CHOPP + 1 COPO DO EVENTO!";
-              document.querySelector('#result > span').textContent = mensagem_result;
-            } else {
               mensagem_result = "VOCÊ GANHOU 1 CHOPP + 1 COPO DO EVENTO!"
               document.querySelector('#result > span').textContent = mensagem_result;
-            }
+
         }, 3000); // Ajuste este valor conforme necessário para o tempo antes da imagem começar a desaparecer
 
 
