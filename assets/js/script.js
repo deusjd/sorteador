@@ -4,10 +4,10 @@
 window.onload = function() {
   document.getElementById("rulesPopup").style.display = "flex"; // Alterado para "flex" para trabalhar com o novo estilo CSS
       // Define um valor padrão para o campo CPF
-      document.getElementById("cpf").value = "08765920945"; // Substitua '12345678901' pelo valor padrão desejado
+      // document.getElementById("cpf").value = "08765920945"; // Substitua '12345678901' pelo valor padrão desejado
 
       // Marca o checkbox como checado
-      document.getElementById("agreeTerms").checked = true;
+      // document.getElementById("agreeTerms").checked = true;
 };
 
 
@@ -119,11 +119,11 @@ function gerarNumeroDoDia(cpf) {
   var dataAtual = new Date();
   var chaveSorteio = 'sorteio-' + cpf + '-' + dataAtual.toISOString().split('T')[0]; // Cria uma chave única por dia para cada CPF
 
-  // Verifica se o sorteio já foi realizado hoje para este CPF
-  // if (localStorage.getItem(chaveSorteio)) {
-  //     alert("Você já participou do sorteio hoje!");
-  //     return; // Interrompe a execução da função se o sorteio já foi realizado
-  // }
+ // Verifica se o sorteio já foi realizado hoje para este CPF
+  if (localStorage.getItem(chaveSorteio)) {
+      alert("Você já participou do sorteio hoje!");
+      return; // Interrompe a execução da função se o sorteio já foi realizado
+  }
 
   // Inicia a contagem regressiva de 5 segundos
   let counter = 5;
@@ -151,13 +151,13 @@ function mostrarResultadoSorteio(cpf) {
   // Como o dia do mês pode ser de 1 a 31, usamos o módulo (%) por 11 para obter um número entre 0 e 10
   //var numeroDoDia = dataAtual.getDate() % 21; // Garante que esteja entre 0 e 10
 
-  var numeroDoDia = Math.floor(Math.random() * 19);
+  var numeroDoDia = Math.floor(Math.random() * 21);
 
   // Gerar um número aleatório entre 0 e 10
   // Math.random() gera um número entre 0 (inclusivo) e 1 (exclusivo), então multiplicamos por 11
   // para obter um número no intervalo [0, 11) e usamos Math.floor() para arredondar para baixo,
   // resultando em um número inteiro entre 0 e 10
-  var result = Math.floor(Math.random() * 19);
+  var result = Math.floor(Math.random() * 21);
 
   var resultadoSorteio = numeroDoDia === result ? "Ganhou" : "Não ganhou";
 
