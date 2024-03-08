@@ -140,7 +140,7 @@ function gerarNumeroDoDia(cpf) {
           mostrarResultadoSorteio(cpf); // Chama a função para mostrar o resultado
           localStorage.setItem(chaveSorteio, true); // Marca que o sorteio foi realizado hoje para este CPF
       }
-  }, 1000); // Atualiza a contagem a cada segundo
+  }, 1000); // Atualiza a contagem a cada segundo.
 }
 
 function mostrarResultadoSorteio(cpf) {
