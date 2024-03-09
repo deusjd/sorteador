@@ -151,13 +151,13 @@ function mostrarResultadoSorteio(cpf) {
   // Como o dia do mês pode ser de 1 a 31, usamos o módulo (%) por 11 para obter um número entre 0 e 10
   //var numeroDoDia = dataAtual.getDate() % 21; // Garante que esteja entre 0 e 10
 
-  var numeroDoDia = Math.floor(Math.random() * 14);
+  var numeroDoDia = Math.floor(Math.random() * 13);
 
   // Gerar um número aleatório entre 0 e 10
   // Math.random() gera um número entre 0 (inclusivo) e 1 (exclusivo), então multiplicamos por 11
   // para obter um número no intervalo [0, 11) e usamos Math.floor() para arredondar para baixo,
   // resultando em um número inteiro entre 0 e 10
-  var result = Math.floor(Math.random() * 14);
+  var result = Math.floor(Math.random() * 13);
 
   var resultadoSorteio = numeroDoDia === result ? "Ganhou" : "Não ganhou";
 
