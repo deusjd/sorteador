@@ -196,7 +196,7 @@ function mostrarResultadoSorteio(cpf) {
 
 
   } else {
-    mensagem_result = "Não foi dessa vez, volte amanhã e tente outra vez. 😢"
+    mensagem_result = "Não foi dessa vez. 😢"
       document.querySelector('#result > span').textContent = mensagem_result;
   }
 
