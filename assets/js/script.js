@@ -2,12 +2,12 @@
 //habilitar sorteio no memso dia cpf
 
 window.onload = function() {
-  document.getElementById("rulesPopup").style.display = "flex"; // Alterado para "flex" para trabalhar com o novo estilo CSS
-      // Define um valor padrão para o campo CPF
-      // document.getElementById("cpf").value = "08765920945"; // Substitua '12345678901' pelo valor padrão desejado
+  document.getElementById("rulesPopup").style.display = "flex";
+  var campoCPF = document.getElementById("cpf");
 
-      // Marca o checkbox como checado
-      // document.getElementById("agreeTerms").checked = true;
+  campoCPF.addEventListener('input', function() {
+    aplicarMascaraCPF(campoCPF);
+  });
 };
 
 
@@ -226,4 +226,15 @@ function validaCPF(cpf) {
   if (resto !== parseInt(cpf.substring(10, 11))) return false; 
 
   return true;
+}
+
+function aplicarMascaraCPF(campo) {
+  var valor = campo.value;
+
+  valor = valor.replace(/\D/g, ""); // Remove tudo o que não é dígito
+  valor = valor.replace(/(\d{3})(\d)/, "$1.$2"); // Coloca ponto após o terceiro dígito
+  valor = valor.replace(/(\d{3})(\d)/, "$1.$2"); // Coloca ponto após o sexto dígito
+  valor = valor.replace(/(\d{3})(\d{1,2})$/, "$1-$2"); // Coloca hífen antes dos dois últimos dígitos
+
+  campo.value = valor;
 }
