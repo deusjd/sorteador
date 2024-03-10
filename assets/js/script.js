@@ -5,9 +5,7 @@ window.onload = function() {
   document.getElementById("rulesPopup").style.display = "flex";
   var campoCPF = document.getElementById("cpf");
 
-  campoCPF.addEventListener('input', function() {
-    aplicarMascaraCPF(campoCPF);
-  });
+  
 };
 
 
@@ -226,15 +224,4 @@ function validaCPF(cpf) {
   if (resto !== parseInt(cpf.substring(10, 11))) return false; 
 
   return true;
-}
-
-function aplicarMascaraCPF(campo) {
-  var valor = campo.value;
-
-  valor = valor.replace(/\D/g, ""); // Remove tudo o que não é dígito
-  valor = valor.replace(/(\d{3})(\d)/, "$1.$2"); // Coloca ponto após o terceiro dígito
-  valor = valor.replace(/(\d{3})(\d)/, "$1.$2"); // Coloca ponto após o sexto dígito
-  valor = valor.replace(/(\d{3})(\d{1,2})$/, "$1-$2"); // Coloca hífen antes dos dois últimos dígitos
-
-  campo.value = valor;
 }
