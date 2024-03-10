@@ -151,13 +151,13 @@ function mostrarResultadoSorteio(cpf) {
   // Como o dia do mês pode ser de 1 a 31, usamos o módulo (%) por 11 para obter um número entre 0 e 10
   //var numeroDoDia = dataAtual.getDate() % 21; // Garante que esteja entre 0 e 10
 
-  var numeroDoDia = Math.floor(Math.random() * 13);
+  var numeroDoDia = Math.floor(Math.random() * 10);
 
   // Gerar um número aleatório entre 0 e 10
   // Math.random() gera um número entre 0 (inclusivo) e 1 (exclusivo), então multiplicamos por 11
   // para obter um número no intervalo [0, 11) e usamos Math.floor() para arredondar para baixo,
   // resultando em um número inteiro entre 0 e 10
-  var result = Math.floor(Math.random() * 13);
+  var result = Math.floor(Math.random() * 10);
 
   var resultadoSorteio = numeroDoDia === result ? "Ganhou" : "Não ganhou";
 
@@ -165,7 +165,7 @@ function mostrarResultadoSorteio(cpf) {
    
     mensagem_result = "VOCÊ GANHOU 1 CHOPP + 1 COPO DO EVENTO!"
     } else {
-      mensagem_result = "Não foi dessa vez, volte amanhã e tente outra vez. 😢"
+      mensagem_result = "Não foi dessa vez. 😢"
     }
 
 
