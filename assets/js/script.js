@@ -120,10 +120,10 @@ function gerarNumeroDoDia(cpf) {
   var chaveSorteio = 'sorteio-' + cpf + '-' + dataAtual.toISOString().split('T')[0]; // Cria uma chave única por dia para cada CPF
 
  // Verifica se o sorteio já foi realizado hoje para este CPF
-  if (localStorage.getItem(chaveSorteio)) {
-      alert("Você já participou do sorteio hoje!");
-      return; // Interrompe a execução da função se o sorteio já foi realizado
-  }
+//  if (localStorage.getItem(chaveSorteio)) {
+//      alert("Você já participou do sorteio hoje!");
+//      return; // Interrompe a execução da função se o sorteio já foi realizado
+//  }
 
   // Inicia a contagem regressiva de 5 segundos
   let counter = 5;
