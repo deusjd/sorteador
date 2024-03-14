@@ -157,13 +157,13 @@ function mostrarResultadoSorteio(cpf) {
   // Math.random() gera um número entre 0 (inclusivo) e 1 (exclusivo), então multiplicamos por 11
   // para obter um número no intervalo [0, 11) e usamos Math.floor() para arredondar para baixo,
   // resultando em um número inteiro entre 0 e 10
-  var result = 2 // Math.floor(Math.random() * 10);
+  var result = 1 // Math.floor(Math.random() * 10);
 
   var resultadoSorteio = numeroDoDia === result ? "Ganhou" : "Não ganhou";
 
   if (numeroDoDia === result){
    
-    mensagem_result = "VOCÊ GANHOU 1 CHOPP + 1 COPO DO EVENTO!"
+    mensagem_result = "VOCÊ GANHOU 1 DRINK DE CAFÉ"
     } else {
       mensagem_result = "Não foi dessa vez. 😢"
     }
@@ -189,7 +189,7 @@ function mostrarResultadoSorteio(cpf) {
                 elementoPremio.style.display = 'block'; // Mostra o prêmio
             }, 2000); // Este valor deve coincidir com a duração da animação de desaparecimento
 
-              mensagem_result = "VOCÊ GANHOU 1 CHOPP + 1 COPO DO EVENTO!"
+            //  mensagem_result = "VOCÊ GANHOU 1 DRINK DE CAFÉ"
               document.querySelector('#result > span').textContent = mensagem_result;
 
         }, 3000); // Ajuste este valor conforme necessário para o tempo antes da imagem começar a desaparecer

@@ -8,7 +8,7 @@
 }
 
 #logo-header {
-    background-image: url('../images/logo.png');
+    background-image: url('../images/marca-horizontal.png');
     height: 150px; /* Altura do header */
     width: 300px; /* Largura do header */
     background-size: contain; /* Faz com que a imagem de fundo se ajuste ao tamanho do elemento */
@@ -240,3 +240,32 @@ input[type="tel"] {
     flex-grow: 1; /* O campo de entrada ocupa o espaço restante */
 }
 
+
+
+.imagem-premio {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 2s ease-in-out;
+}
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translate(-50%, -45%);
+    }
+    50% {
+        transform: translate(-50%, -55%);
+    }
+}
+
+@keyframes desaparecer {
+    to {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.imagem-premio.desaparecer {
+    animation: desaparecer 2s forwards;
+}
