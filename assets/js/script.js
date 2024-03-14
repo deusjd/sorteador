@@ -26,10 +26,10 @@ function validateForm() {
   var agreeTerms = document.getElementById("agreeTerms").checked;
   
  // Adiciona a chamada para a função de validação de CPF
-  if (!validaCPF(cpf)) {
-    alert("Por favor, insira um CPF válido.");
-    return; // Interrompe a execução se o CPF for inválido
-  }
+ // if (!validaCPF(cpf)) {
+ //   alert("Por favor, insira um CPF válido.");
+ //   return; // Interrompe a execução se o CPF for inválido
+//  }
 
   // Verifica se o CPF está preenchido e o checkbox marcado
   if(cpf.trim() !== "" && agreeTerms) {
