@@ -1,45 +1,45 @@
 {
     "main": {
         "regiao": "florianopolis",
-        "acessos": 58637,
-        "downloads": 15621,
+        "acessos": 58743,
+        "downloads": 15653,
         "acessosUltimos7Dias": {
             "dia": {
-                "0 - Monday   ": 19,
-                "1 - Sunday   ": 189,
-                "2 - Saturday ": 213,
-                "3 - Friday   ": 179,
-                "4 - Thursday ": 166,
-                "5 - Wednesday": 125,
-                "6 - Tuesday  ": 98,
-                "7 - Monday   ": 102
+                "0 - Tuesday  ": 8,
+                "1 - Monday   ": 117,
+                "2 - Sunday   ": 189,
+                "3 - Saturday ": 213,
+                "4 - Friday   ": 179,
+                "5 - Thursday ": 166,
+                "6 - Wednesday": 125,
+                "7 - Tuesday  ": 98
             },
-            "quantidade": 1091
+            "quantidade": 1095
         },
         "downloadsUltimos7Dias": {
             "dia": {
-                "0 - Monday   ": 0,
-                "1 - Sunday   ": 9,
-                "2 - Saturday ": 12,
-                "3 - Friday   ": 16,
-                "4 - Thursday ": 9,
-                "5 - Wednesday": 15,
-                "6 - Tuesday  ": 18,
-                "7 - Monday   ": 10
+                "0 - Tuesday  ": 0,
+                "1 - Monday   ": 1,
+                "2 - Sunday   ": 9,
+                "3 - Saturday ": 12,
+                "4 - Friday   ": 17,
+                "5 - Thursday ": 9,
+                "6 - Wednesday": 15,
+                "7 - Tuesday  ": 18
             },
-            "quantidade": 89
+            "quantidade": 81
         }
     },
     "estabelecimento": [
         {
             "cliques": {
-                "dias": 308,
                 "pessoas": 1962,
+                "diasAtivos": 276,
                 "quantidade": 2977,
                 "cliquesPorDia": 9.67,
                 "pessoasPorDia": 6.37,
-                "pessoasUltimos7dias": 22,
-                "quantidadeUltimos7dias": 26
+                "pessoasUltimos7dias": 20,
+                "quantidadeUltimos7dias": 24
             },
             "reviews": {
                 "estrelas": 5.00,
@@ -53,7 +53,6 @@
                 "quantidade": 1,
                 "quantidadePessoas": 2
             },
-            "diasAtivos": 309,
             "interacoes": {
                 "acao": [
                     "45 - Botão de ação Participar do sorteio",
@@ -75,13 +74,13 @@
         },
         {
             "cliques": {
-                "dias": 264,
                 "pessoas": 1495,
+                "diasAtivos": 276,
                 "quantidade": 2372,
                 "cliquesPorDia": 8.98,
                 "pessoasPorDia": 5.66,
-                "pessoasUltimos7dias": 28,
-                "quantidadeUltimos7dias": 32
+                "pessoasUltimos7dias": 27,
+                "quantidadeUltimos7dias": 31
             },
             "reviews": {
                 "estrelas": 4.80,
@@ -98,7 +97,6 @@
                 "quantidade": 2,
                 "quantidadePessoas": 6
             },
-            "diasAtivos": 265,
             "interacoes": {
                 "acao": [
                     "10 - Botão de ação Comprar Ingressos",
@@ -122,13 +120,13 @@
         },
         {
             "cliques": {
-                "dias": 223,
-                "pessoas": 1454,
-                "quantidade": 2315,
-                "cliquesPorDia": 10.38,
-                "pessoasPorDia": 6.52,
-                "pessoasUltimos7dias": 45,
-                "quantidadeUltimos7dias": 54
+                "pessoas": 1459,
+                "diasAtivos": 277,
+                "quantidade": 2322,
+                "cliquesPorDia": 10.37,
+                "pessoasPorDia": 6.51,
+                "pessoasUltimos7dias": 47,
+                "quantidadeUltimos7dias": 57
             },
             "reviews": {
                 "estrelas": 5.00,
@@ -141,7 +139,6 @@
                 "quantidade": 14,
                 "quantidadePessoas": 37
             },
-            "diasAtivos": 224,
             "interacoes": {
                 "acao": [
                     "38 - Botão de ação Participar do sorteio",
@@ -159,19 +156,19 @@
                     "60 - Tour"
                 ]
             },
-            "qtdFavoritados": 4,
+            "qtdFavoritados": 5,
             "valorInvestido": null,
             "estabelecimento": "Dk4 "
         },
         {
             "cliques": {
-                "dias": 251,
                 "pessoas": 1313,
+                "diasAtivos": 277,
                 "quantidade": 2052,
                 "cliquesPorDia": 8.18,
                 "pessoasPorDia": 5.23,
-                "pessoasUltimos7dias": 23,
-                "quantidadeUltimos7dias": 29
+                "pessoasUltimos7dias": 20,
+                "quantidadeUltimos7dias": 26
             },
             "reviews": {
                 "estrelas": 5.00,
@@ -189,7 +186,6 @@
                 "quantidade": 5,
                 "quantidadePessoas": 12
             },
-            "diasAtivos": 251,
             "interacoes": {
                 "acao": [
                     "11 - Brinde Aniversário",
@@ -209,13 +205,13 @@
         },
         {
             "cliques": {
-                "dias": 292,
-                "pessoas": 1278,
-                "quantidade": 1936,
-                "cliquesPorDia": 6.63,
-                "pessoasPorDia": 4.38,
-                "pessoasUltimos7dias": 22,
-                "quantidadeUltimos7dias": 24
+                "pessoas": 1281,
+                "diasAtivos": 277,
+                "quantidade": 1939,
+                "cliquesPorDia": 6.60,
+                "pessoasPorDia": 4.36,
+                "pessoasUltimos7dias": 24,
+                "quantidadeUltimos7dias": 26
             },
             "reviews": {
                 "estrelas": 5.00,
@@ -230,7 +226,6 @@
                 ]
             },
             "reservas": null,
-            "diasAtivos": 294,
             "interacoes": {
                 "acao": [
                     "01 - Botão de ação SORTEIO DE 1 CHOPP",
@@ -242,7 +237,7 @@
                     "27 - Cardápio",
                     "02 - Chamar Motorista - 99",
                     "04 - Chamar Motorista - Uber",
-                    "26 - Horário",
+                    "27 - Horário",
                     "15 - Compartilhar"
                 ]
             },
@@ -252,12 +247,12 @@
         },
         {
             "cliques": {
-                "dias": 283,
-                "pessoas": 1199,
-                "quantidade": 1757,
-                "cliquesPorDia": 6.21,
-                "pessoasPorDia": 4.24,
-                "pessoasUltimos7dias": 33,
+                "pessoas": 1202,
+                "diasAtivos": 277,
+                "quantidade": 1760,
+                "cliquesPorDia": 6.20,
+                "pessoasPorDia": 4.23,
+                "pessoasUltimos7dias": 34,
                 "quantidadeUltimos7dias": 40
             },
             "reviews": null,
@@ -265,7 +260,6 @@
                 "quantidade": 1,
                 "quantidadePessoas": 2
             },
-            "diasAtivos": 284,
             "interacoes": {
                 "acao": [
                     "01 - Botão de ação Comprar Ingressos",
@@ -288,17 +282,16 @@
         },
         {
             "cliques": {
-                "dias": 285,
-                "pessoas": 1177,
-                "quantidade": 1670,
+                "pessoas": 1178,
+                "diasAtivos": 277,
+                "quantidade": 1671,
                 "cliquesPorDia": 5.86,
                 "pessoasPorDia": 4.13,
-                "pessoasUltimos7dias": 24,
-                "quantidadeUltimos7dias": 28
+                "pessoasUltimos7dias": 23,
+                "quantidadeUltimos7dias": 27
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 285,
             "interacoes": {
                 "acao": [
                     "17 - Contato",
@@ -318,13 +311,13 @@
         },
         {
             "cliques": {
-                "dias": 264,
-                "pessoas": 1118,
-                "quantidade": 1640,
-                "cliquesPorDia": 6.21,
-                "pessoasPorDia": 4.23,
-                "pessoasUltimos7dias": 19,
-                "quantidadeUltimos7dias": 22
+                "pessoas": 1122,
+                "diasAtivos": 277,
+                "quantidade": 1644,
+                "cliquesPorDia": 6.23,
+                "pessoasPorDia": 4.25,
+                "pessoasUltimos7dias": 22,
+                "quantidadeUltimos7dias": 23
             },
             "reviews": {
                 "estrelas": 5.00,
@@ -334,15 +327,14 @@
                 ]
             },
             "reservas": null,
-            "diasAtivos": 264,
             "interacoes": {
                 "acao": [
-                    "11 - Brinde Aniversário",
+                    "12 - Brinde Aniversário",
                     "24 - Botão de ação Participar do sorteio",
                     "05 - Contato",
                     "23 - Instagram",
                     "12 - Endereço no Maps",
-                    "25 - Cardápio",
+                    "26 - Cardápio",
                     "01 - Chamar Motorista - 99",
                     "07 - Chamar Motorista - Uber",
                     "32 - Horário",
@@ -355,11 +347,11 @@
         },
         {
             "cliques": {
-                "dias": 267,
-                "pessoas": 981,
-                "quantidade": 1513,
-                "cliquesPorDia": 5.67,
-                "pessoasPorDia": 3.67,
+                "pessoas": 983,
+                "diasAtivos": 277,
+                "quantidade": 1515,
+                "cliquesPorDia": 5.63,
+                "pessoasPorDia": 3.65,
                 "pessoasUltimos7dias": 19,
                 "quantidadeUltimos7dias": 22
             },
@@ -368,7 +360,6 @@
                 "quantidade": 2,
                 "quantidadePessoas": 12
             },
-            "diasAtivos": 269,
             "interacoes": {
                 "acao": [
                     "12 - Botão de ação Conheça o famoso EGG",
@@ -377,7 +368,7 @@
                     "05 - Botão de ação Resgatar Cupom",
                     "22 - Contato",
                     "08 - Delivery",
-                    "94 - Instagram",
+                    "95 - Instagram",
                     "67 - Endereço no Maps",
                     "26 - Cardápio",
                     "02 - Chamar Motorista - 99",
@@ -392,13 +383,13 @@
         },
         {
             "cliques": {
-                "dias": 286,
-                "pessoas": 947,
-                "quantidade": 1273,
-                "cliquesPorDia": 4.45,
-                "pessoasPorDia": 3.31,
+                "pessoas": 951,
+                "diasAtivos": 278,
+                "quantidade": 1278,
+                "cliquesPorDia": 4.44,
+                "pessoasPorDia": 3.30,
                 "pessoasUltimos7dias": 24,
-                "quantidadeUltimos7dias": 26
+                "quantidadeUltimos7dias": 27
             },
             "reviews": {
                 "estrelas": 4.67,
@@ -413,7 +404,6 @@
                 "quantidade": 2,
                 "quantidadePessoas": 8
             },
-            "diasAtivos": 290,
             "interacoes": {
                 "acao": [
                     "22 - Brinde Aniversário",
@@ -435,20 +425,19 @@
         },
         {
             "cliques": {
-                "dias": 300,
                 "pessoas": 898,
+                "diasAtivos": 276,
                 "quantidade": 1223,
                 "cliquesPorDia": 4.08,
                 "pessoasPorDia": 2.99,
-                "pessoasUltimos7dias": 15,
-                "quantidadeUltimos7dias": 15
+                "pessoasUltimos7dias": 14,
+                "quantidadeUltimos7dias": 14
             },
             "reviews": null,
             "reservas": {
                 "quantidade": 1,
                 "quantidadePessoas": 10
             },
-            "diasAtivos": 301,
             "interacoes": {
                 "acao": [
                     "15 - Botão de ação Mais Informações",
@@ -469,22 +458,21 @@
         },
         {
             "cliques": {
-                "dias": 289,
-                "pessoas": 894,
-                "quantidade": 1164,
-                "cliquesPorDia": 4.03,
+                "pessoas": 897,
+                "diasAtivos": 277,
+                "quantidade": 1167,
+                "cliquesPorDia": 4.02,
                 "pessoasPorDia": 3.09,
-                "pessoasUltimos7dias": 12,
-                "quantidadeUltimos7dias": 13
+                "pessoasUltimos7dias": 14,
+                "quantidadeUltimos7dias": 14
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 290,
             "interacoes": {
                 "acao": [
                     "18 - Botão de ação Comprar Ingressos",
                     "21 - Contato",
-                    "81 - Instagram",
+                    "82 - Instagram",
                     "23 - Endereço no Maps",
                     "26 - Cardápio",
                     "11 - Chamar Motorista - Uber",
@@ -500,13 +488,13 @@
         },
         {
             "cliques": {
-                "dias": 190,
-                "pessoas": 832,
-                "quantidade": 1344,
+                "pessoas": 836,
+                "diasAtivos": 277,
+                "quantidade": 1351,
                 "cliquesPorDia": 7.07,
                 "pessoasPorDia": 4.38,
-                "pessoasUltimos7dias": 23,
-                "quantidadeUltimos7dias": 37
+                "pessoasUltimos7dias": 26,
+                "quantidadeUltimos7dias": 38
             },
             "reviews": {
                 "estrelas": 5.00,
@@ -520,10 +508,9 @@
                 "quantidade": 5,
                 "quantidadePessoas": 17
             },
-            "diasAtivos": 191,
             "interacoes": {
                 "acao": [
-                    "71 - Brinde Aniversário",
+                    "72 - Brinde Aniversário",
                     "16 - Contato",
                     "09 - Delivery",
                     "24 - Instagram",
@@ -533,7 +520,7 @@
                     "25 - Horário",
                     "04 - Compartilhar",
                     "45 - Tour",
-                    "48 - Site"
+                    "49 - Site"
                 ]
             },
             "qtdFavoritados": 3,
@@ -542,20 +529,19 @@
         },
         {
             "cliques": {
-                "dias": 215,
-                "pessoas": 767,
-                "quantidade": 1027,
-                "cliquesPorDia": 4.78,
+                "pessoas": 771,
+                "diasAtivos": 277,
+                "quantidade": 1031,
+                "cliquesPorDia": 4.77,
                 "pessoasPorDia": 3.57,
-                "pessoasUltimos7dias": 24,
-                "quantidadeUltimos7dias": 26
+                "pessoasUltimos7dias": 26,
+                "quantidadeUltimos7dias": 28
             },
             "reviews": null,
             "reservas": {
                 "quantidade": 1,
                 "quantidadePessoas": 4
             },
-            "diasAtivos": 216,
             "interacoes": {
                 "acao": [
                     "13 - Contato",
@@ -575,17 +561,16 @@
         },
         {
             "cliques": {
-                "dias": 288,
-                "pessoas": 753,
-                "quantidade": 1047,
-                "cliquesPorDia": 3.64,
-                "pessoasPorDia": 2.61,
-                "pessoasUltimos7dias": 12,
-                "quantidadeUltimos7dias": 14
+                "pessoas": 755,
+                "diasAtivos": 277,
+                "quantidade": 1049,
+                "cliquesPorDia": 3.62,
+                "pessoasPorDia": 2.60,
+                "pessoasUltimos7dias": 11,
+                "quantidadeUltimos7dias": 11
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 290,
             "interacoes": {
                 "acao": [
                     "86 - Brinde Aniversário",
@@ -609,8 +594,8 @@
         },
         {
             "cliques": {
-                "dias": 284,
                 "pessoas": 739,
+                "diasAtivos": 277,
                 "quantidade": 1025,
                 "cliquesPorDia": 3.61,
                 "pessoasPorDia": 2.60,
@@ -619,7 +604,6 @@
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 284,
             "interacoes": {
                 "acao": [
                     "10 - Brinde Aniversário",
@@ -639,13 +623,13 @@
         },
         {
             "cliques": {
-                "dias": 200,
-                "pessoas": 726,
-                "quantidade": 1043,
-                "cliquesPorDia": 5.22,
-                "pessoasPorDia": 3.63,
-                "pessoasUltimos7dias": 21,
-                "quantidadeUltimos7dias": 27
+                "pessoas": 728,
+                "diasAtivos": 277,
+                "quantidade": 1045,
+                "cliquesPorDia": 5.20,
+                "pessoasPorDia": 3.62,
+                "pessoasUltimos7dias": 20,
+                "quantidadeUltimos7dias": 26
             },
             "reviews": {
                 "estrelas": 5.00,
@@ -658,13 +642,12 @@
                 ]
             },
             "reservas": null,
-            "diasAtivos": 201,
             "interacoes": {
                 "acao": [
-                    "50 - Brinde Aniversário",
+                    "51 - Brinde Aniversário",
                     "14 - Instagram",
                     "33 - Endereço no Maps",
-                    "78 - Cardápio",
+                    "79 - Cardápio",
                     "04 - Chamar Motorista - Uber",
                     "16 - Horário",
                     "04 - Compartilhar"
@@ -676,13 +659,13 @@
         },
         {
             "cliques": {
-                "dias": 286,
                 "pessoas": 655,
+                "diasAtivos": 277,
                 "quantidade": 875,
                 "cliquesPorDia": 3.06,
                 "pessoasPorDia": 2.29,
-                "pessoasUltimos7dias": 23,
-                "quantidadeUltimos7dias": 40
+                "pessoasUltimos7dias": 22,
+                "quantidadeUltimos7dias": 37
             },
             "reviews": {
                 "estrelas": 5.00,
@@ -696,7 +679,6 @@
                 ]
             },
             "reservas": null,
-            "diasAtivos": 286,
             "interacoes": {
                 "acao": [
                     "04 - Brinde Aniversário",
@@ -717,20 +699,19 @@
         },
         {
             "cliques": {
-                "dias": 213,
-                "pessoas": 639,
-                "quantidade": 860,
-                "cliquesPorDia": 4.04,
+                "pessoas": 641,
+                "diasAtivos": 277,
+                "quantidade": 862,
+                "cliquesPorDia": 4.03,
                 "pessoasPorDia": 3.00,
-                "pessoasUltimos7dias": 20,
-                "quantidadeUltimos7dias": 24
+                "pessoasUltimos7dias": 22,
+                "quantidadeUltimos7dias": 26
             },
             "reviews": null,
             "reservas": {
                 "quantidade": 6,
                 "quantidadePessoas": 18
             },
-            "diasAtivos": 214,
             "interacoes": {
                 "acao": [
                     "06 - Contato",
@@ -750,8 +731,8 @@
         },
         {
             "cliques": {
-                "dias": 292,
                 "pessoas": 594,
+                "diasAtivos": 276,
                 "quantidade": 738,
                 "cliquesPorDia": 2.53,
                 "pessoasPorDia": 2.03,
@@ -760,7 +741,6 @@
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 293,
             "interacoes": {
                 "acao": [
                     "05 - Contato",
@@ -781,13 +761,13 @@
         },
         {
             "cliques": {
-                "dias": 299,
-                "pessoas": 593,
-                "quantidade": 834,
+                "pessoas": 594,
+                "diasAtivos": 277,
+                "quantidade": 835,
                 "cliquesPorDia": 2.79,
-                "pessoasPorDia": 1.98,
-                "pessoasUltimos7dias": 9,
-                "quantidadeUltimos7dias": 12
+                "pessoasPorDia": 1.99,
+                "pessoasUltimos7dias": 10,
+                "quantidadeUltimos7dias": 13
             },
             "reviews": {
                 "estrelas": 4.67,
@@ -799,7 +779,6 @@
                 ]
             },
             "reservas": null,
-            "diasAtivos": 307,
             "interacoes": {
                 "acao": [
                     "17 - Contato",
@@ -817,17 +796,16 @@
         },
         {
             "cliques": {
-                "dias": 153,
-                "pessoas": 592,
-                "quantidade": 807,
-                "cliquesPorDia": 5.27,
-                "pessoasPorDia": 3.87,
+                "pessoas": 593,
+                "diasAtivos": 277,
+                "quantidade": 808,
+                "cliquesPorDia": 5.28,
+                "pessoasPorDia": 3.88,
                 "pessoasUltimos7dias": 33,
-                "quantidadeUltimos7dias": 42
+                "quantidadeUltimos7dias": 40
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 153,
             "interacoes": {
                 "acao": [
                     "03 - Contato",
@@ -845,8 +823,8 @@
         },
         {
             "cliques": {
-                "dias": 275,
                 "pessoas": 575,
+                "diasAtivos": 275,
                 "quantidade": 721,
                 "cliquesPorDia": 2.62,
                 "pessoasPorDia": 2.09,
@@ -855,7 +833,6 @@
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 277,
             "interacoes": {
                 "acao": [
                     "91 - Brinde Aniversário",
@@ -875,20 +852,19 @@
         },
         {
             "cliques": {
-                "dias": 285,
-                "pessoas": 548,
-                "quantidade": 790,
-                "cliquesPorDia": 2.77,
-                "pessoasPorDia": 1.92,
-                "pessoasUltimos7dias": 17,
-                "quantidadeUltimos7dias": 19
+                "pessoas": 549,
+                "diasAtivos": 277,
+                "quantidade": 791,
+                "cliquesPorDia": 2.76,
+                "pessoasPorDia": 1.91,
+                "pessoasUltimos7dias": 18,
+                "quantidadeUltimos7dias": 20
             },
             "reviews": null,
             "reservas": {
                 "quantidade": 1,
                 "quantidadePessoas": 2
             },
-            "diasAtivos": 290,
             "interacoes": {
                 "acao": [
                     "10 - Botão de ação Conheça o Arroz Flonopx",
@@ -910,23 +886,22 @@
         },
         {
             "cliques": {
-                "dias": 213,
-                "pessoas": 523,
-                "quantidade": 679,
-                "cliquesPorDia": 3.19,
-                "pessoasPorDia": 2.46,
-                "pessoasUltimos7dias": 17,
-                "quantidadeUltimos7dias": 20
+                "pessoas": 529,
+                "diasAtivos": 277,
+                "quantidade": 685,
+                "cliquesPorDia": 3.20,
+                "pessoasPorDia": 2.47,
+                "pessoasUltimos7dias": 23,
+                "quantidadeUltimos7dias": 26
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 214,
             "interacoes": {
                 "acao": [
                     "10 - Contato",
                     "48 - Instagram",
                     "16 - Endereço no Maps",
-                    "14 - Cardápio",
+                    "15 - Cardápio",
                     "01 - Chamar Motorista - Uber",
                     "08 - Horário",
                     "02 - Compartilhar"
@@ -938,13 +913,13 @@
         },
         {
             "cliques": {
-                "dias": 275,
-                "pessoas": 489,
-                "quantidade": 613,
-                "cliquesPorDia": 2.23,
-                "pessoasPorDia": 1.78,
-                "pessoasUltimos7dias": 12,
-                "quantidadeUltimos7dias": 13
+                "pessoas": 490,
+                "diasAtivos": 277,
+                "quantidade": 614,
+                "cliquesPorDia": 2.22,
+                "pessoasPorDia": 1.77,
+                "pessoasUltimos7dias": 11,
+                "quantidadeUltimos7dias": 12
             },
             "reviews": {
                 "estrelas": 5.00,
@@ -954,7 +929,6 @@
                 ]
             },
             "reservas": null,
-            "diasAtivos": 277,
             "interacoes": {
                 "acao": [
                     "63 - Brinde Aniversário",
@@ -976,13 +950,13 @@
         },
         {
             "cliques": {
-                "dias": 301,
                 "pessoas": 439,
+                "diasAtivos": 277,
                 "quantidade": 569,
                 "cliquesPorDia": 1.89,
                 "pessoasPorDia": 1.46,
-                "pessoasUltimos7dias": 14,
-                "quantidadeUltimos7dias": 17
+                "pessoasUltimos7dias": 13,
+                "quantidadeUltimos7dias": 15
             },
             "reviews": {
                 "estrelas": 5.00,
@@ -992,7 +966,6 @@
                 ]
             },
             "reservas": null,
-            "diasAtivos": 301,
             "interacoes": {
                 "acao": [
                     "67 - Brinde Aniversário",
@@ -1014,29 +987,28 @@
         },
         {
             "cliques": {
-                "dias": 155,
-                "pessoas": 398,
-                "quantidade": 569,
-                "cliquesPorDia": 3.67,
+                "pessoas": 404,
+                "diasAtivos": 277,
+                "quantidade": 575,
+                "cliquesPorDia": 3.66,
                 "pessoasPorDia": 2.57,
-                "pessoasUltimos7dias": 15,
-                "quantidadeUltimos7dias": 16
+                "pessoasUltimos7dias": 21,
+                "quantidadeUltimos7dias": 22
             },
             "reviews": null,
             "reservas": {
-                "quantidade": 40,
-                "quantidadePessoas": 515
+                "quantidade": 41,
+                "quantidadePessoas": 545
             },
-            "diasAtivos": 157,
             "interacoes": {
                 "acao": [
-                    "35 - Brinde Aniversário",
+                    "36 - Brinde Aniversário",
                     "13 - Contato",
                     "66 - Instagram",
                     "33 - Endereço no Maps",
-                    "66 - Cardápio",
+                    "69 - Cardápio",
                     "03 - Chamar Motorista - Uber",
-                    "15 - Horário",
+                    "16 - Horário",
                     "04 - Compartilhar",
                     "18 - Tour"
                 ]
@@ -1047,13 +1019,45 @@
         },
         {
             "cliques": {
-                "dias": 238,
-                "pessoas": 390,
-                "quantidade": 451,
+                "pessoas": 391,
+                "diasAtivos": 277,
+                "quantidade": 542,
+                "cliquesPorDia": 2.87,
+                "pessoasPorDia": 2.07,
+                "pessoasUltimos7dias": 13,
+                "quantidadeUltimos7dias": 14
+            },
+            "reviews": null,
+            "reservas": {
+                "quantidade": 3,
+                "quantidadePessoas": 9
+            },
+            "interacoes": {
+                "acao": [
+                    "63 - Brinde Aniversário",
+                    "17 - Contato",
+                    "06 - Delivery",
+                    "48 - Instagram",
+                    "20 - Endereço no Maps",
+                    "02 - Chamar Motorista - Uber",
+                    "13 - Horário",
+                    "07 - Compartilhar",
+                    "19 - Tour"
+                ]
+            },
+            "qtdFavoritados": 1,
+            "valorInvestido": null,
+            "estabelecimento": "Pizzaria 4 Queijos - São José"
+        },
+        {
+            "cliques": {
+                "pessoas": 391,
+                "diasAtivos": 277,
+                "quantidade": 452,
                 "cliquesPorDia": 1.89,
                 "pessoasPorDia": 1.64,
-                "pessoasUltimos7dias": 1,
-                "quantidadeUltimos7dias": 1
+                "pessoasUltimos7dias": 2,
+                "quantidadeUltimos7dias": 2
             },
             "reviews": {
                 "estrelas": 5.00,
@@ -1064,7 +1068,6 @@
                 ]
             },
             "reservas": null,
-            "diasAtivos": 239,
             "interacoes": {
                 "acao": [
                     "09 - Contato",
@@ -1082,46 +1085,13 @@
         },
         {
             "cliques": {
-                "dias": 188,
-                "pessoas": 389,
-                "quantidade": 540,
-                "cliquesPorDia": 2.87,
-                "pessoasPorDia": 2.07,
-                "pessoasUltimos7dias": 12,
-                "quantidadeUltimos7dias": 13
-            },
-            "reviews": null,
-            "reservas": {
-                "quantidade": 3,
-                "quantidadePessoas": 9
-            },
-            "diasAtivos": 189,
-            "interacoes": {
-                "acao": [
-                    "63 - Brinde Aniversário",
-                    "17 - Contato",
-                    "06 - Delivery",
-                    "47 - Instagram",
-                    "20 - Endereço no Maps",
-                    "02 - Chamar Motorista - Uber",
-                    "13 - Horário",
-                    "07 - Compartilhar",
-                    "19 - Tour"
-                ]
-            },
-            "qtdFavoritados": 1,
-            "valorInvestido": null,
-            "estabelecimento": "Pizzaria 4 Queijos - São José"
-        },
-        {
-            "cliques": {
-                "dias": 97,
-                "pessoas": 331,
-                "quantidade": 476,
-                "cliquesPorDia": 4.91,
-                "pessoasPorDia": 3.41,
-                "pessoasUltimos7dias": 33,
-                "quantidadeUltimos7dias": 44
+                "pessoas": 334,
+                "diasAtivos": 277,
+                "quantidade": 481,
+                "cliquesPorDia": 4.96,
+                "pessoasPorDia": 3.44,
+                "pessoasUltimos7dias": 30,
+                "quantidadeUltimos7dias": 40
             },
             "reviews": {
                 "estrelas": 5.00,
@@ -1135,7 +1105,6 @@
                 "quantidade": 4,
                 "quantidadePessoas": 15
             },
-            "diasAtivos": 97,
             "interacoes": {
                 "acao": [
                     "11 - Contato",
@@ -1153,23 +1122,22 @@
         },
         {
             "cliques": {
-                "dias": 152,
-                "pessoas": 329,
-                "quantidade": 421,
-                "cliquesPorDia": 2.77,
-                "pessoasPorDia": 2.16,
-                "pessoasUltimos7dias": 15,
-                "quantidadeUltimos7dias": 16
+                "pessoas": 331,
+                "diasAtivos": 277,
+                "quantidade": 425,
+                "cliquesPorDia": 2.80,
+                "pessoasPorDia": 2.18,
+                "pessoasUltimos7dias": 16,
+                "quantidadeUltimos7dias": 19
             },
             "reviews": null,
             "reservas": {
                 "quantidade": 5,
                 "quantidadePessoas": 20
             },
-            "diasAtivos": 152,
             "interacoes": {
                 "acao": [
-                    "33 - Brinde Aniversário",
+                    "35 - Brinde Aniversário",
                     "15 - Contato",
                     "08 - Delivery",
                     "56 - Instagram",
@@ -1187,22 +1155,21 @@
         },
         {
             "cliques": {
-                "dias": 281,
-                "pessoas": 320,
-                "quantidade": 430,
+                "pessoas": 322,
+                "diasAtivos": 277,
+                "quantidade": 432,
                 "cliquesPorDia": 1.53,
                 "pessoasPorDia": 1.14,
-                "pessoasUltimos7dias": 3,
-                "quantidadeUltimos7dias": 3
+                "pessoasUltimos7dias": 5,
+                "quantidadeUltimos7dias": 5
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 283,
             "interacoes": {
                 "acao": [
                     "04 - Contato",
                     "10 - Delivery",
-                    "73 - Instagram",
+                    "74 - Instagram",
                     "36 - Endereço no Maps",
                     "01 - Chamar Motorista - 99",
                     "28 - Horário"
@@ -1214,8 +1181,8 @@
         },
         {
             "cliques": {
-                "dias": 207,
                 "pessoas": 318,
+                "diasAtivos": 274,
                 "quantidade": 436,
                 "cliquesPorDia": 2.11,
                 "pessoasPorDia": 1.54,
@@ -1224,7 +1191,6 @@
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 210,
             "interacoes": {
                 "acao": [
                     "33 - Botão de ação Participar do sorteio",
@@ -1244,23 +1210,22 @@
         },
         {
             "cliques": {
-                "dias": 134,
-                "pessoas": 270,
-                "quantidade": 332,
-                "cliquesPorDia": 2.48,
+                "pessoas": 272,
+                "diasAtivos": 277,
+                "quantidade": 334,
+                "cliquesPorDia": 2.47,
                 "pessoasPorDia": 2.01,
-                "pessoasUltimos7dias": 15,
-                "quantidadeUltimos7dias": 22
+                "pessoasUltimos7dias": 17,
+                "quantidadeUltimos7dias": 21
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 135,
             "interacoes": {
                 "acao": [
                     "03 - Contato",
                     "19 - Instagram",
                     "15 - Endereço no Maps",
-                    "86 - Cardápio",
+                    "87 - Cardápio",
                     "01 - Chamar Motorista - 99",
                     "01 - Chamar Motorista - Uber",
                     "07 - Horário",
@@ -1268,23 +1233,22 @@
                     "08 - Tour"
                 ]
             },
-            "qtdFavoritados": 2,
+            "qtdFavoritados": 3,
             "valorInvestido": null,
             "estabelecimento": "Restaurante Caravela"
         },
         {
             "cliques": {
-                "dias": 67,
                 "pessoas": 262,
+                "diasAtivos": 276,
                 "quantidade": 365,
                 "cliquesPorDia": 5.45,
                 "pessoasPorDia": 3.91,
-                "pessoasUltimos7dias": 27,
-                "quantidadeUltimos7dias": 33
+                "pessoasUltimos7dias": 26,
+                "quantidadeUltimos7dias": 32
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 68,
             "interacoes": {
                 "acao": [
                     "15 - Brinde Aniversário",
@@ -1305,8 +1269,8 @@
         },
         {
             "cliques": {
-                "dias": 105,
                 "pessoas": 237,
+                "diasAtivos": 275,
                 "quantidade": 301,
                 "cliquesPorDia": 2.87,
                 "pessoasPorDia": 2.26,
@@ -1315,7 +1279,6 @@
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 107,
             "interacoes": {
                 "acao": [
                     "19 - Brinde Aniversário",
@@ -1333,8 +1296,8 @@
         },
         {
             "cliques": {
-                "dias": 219,
                 "pessoas": 218,
+                "diasAtivos": 276,
                 "quantidade": 267,
                 "cliquesPorDia": 1.22,
                 "pessoasPorDia": 1.00,
@@ -1346,7 +1309,6 @@
                 "quantidade": 1,
                 "quantidadePessoas": 4
             },
-            "diasAtivos": 220,
             "interacoes": {
                 "acao": [
                     "11 - Contato",
@@ -1366,20 +1328,19 @@
         },
         {
             "cliques": {
-                "dias": 109,
-                "pessoas": 206,
-                "quantidade": 269,
-                "cliquesPorDia": 2.47,
-                "pessoasPorDia": 1.89,
-                "pessoasUltimos7dias": 14,
-                "quantidadeUltimos7dias": 14
+                "pessoas": 207,
+                "diasAtivos": 277,
+                "quantidade": 270,
+                "cliquesPorDia": 2.45,
+                "pessoasPorDia": 1.88,
+                "pessoasUltimos7dias": 13,
+                "quantidadeUltimos7dias": 13
             },
             "reviews": null,
             "reservas": {
                 "quantidade": 6,
                 "quantidadePessoas": 21
             },
-            "diasAtivos": 110,
             "interacoes": {
                 "acao": [
                     "19 - Brinde Aniversário",
@@ -1399,20 +1360,19 @@
         },
         {
             "cliques": {
-                "dias": 293,
-                "pessoas": 169,
-                "quantidade": 228,
+                "pessoas": 170,
+                "diasAtivos": 277,
+                "quantidade": 229,
                 "cliquesPorDia": 0.78,
                 "pessoasPorDia": 0.58,
-                "pessoasUltimos7dias": 5,
-                "quantidadeUltimos7dias": 5
+                "pessoasUltimos7dias": 6,
+                "quantidadeUltimos7dias": 6
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 294,
             "interacoes": {
                 "acao": [
-                    "21 - Brinde Aniversário",
+                    "22 - Brinde Aniversário",
                     "03 - Botão de ação Reservar Mesa",
                     "07 - Contato",
                     "02 - Delivery",
@@ -1430,8 +1390,8 @@
         },
         {
             "cliques": {
-                "dias": 220,
                 "pessoas": 167,
+                "diasAtivos": 275,
                 "quantidade": 213,
                 "cliquesPorDia": 0.97,
                 "pessoasPorDia": 0.76,
@@ -1440,7 +1400,6 @@
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 222,
             "interacoes": {
                 "acao": [
                     "03 - Contato",
@@ -1460,9 +1419,9 @@
         },
         {
             "cliques": {
-                "dias": 291,
-                "pessoas": 162,
-                "quantidade": 193,
+                "pessoas": 163,
+                "diasAtivos": 277,
+                "quantidade": 194,
                 "cliquesPorDia": 0.66,
                 "pessoasPorDia": 0.56,
                 "pessoasUltimos7dias": 3,
@@ -1470,7 +1429,6 @@
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 294,
             "interacoes": {
                 "acao": [
                     "02 - Contato",
@@ -1486,12 +1444,12 @@
         },
         {
             "cliques": {
-                "dias": 54,
-                "pessoas": 143,
-                "quantidade": 233,
-                "cliquesPorDia": 4.31,
-                "pessoasPorDia": 2.65,
-                "pessoasUltimos7dias": 30,
+                "pessoas": 146,
+                "diasAtivos": 278,
+                "quantidade": 237,
+                "cliquesPorDia": 4.23,
+                "pessoasPorDia": 2.61,
+                "pessoasUltimos7dias": 29,
                 "quantidadeUltimos7dias": 32
             },
             "reviews": {
@@ -1502,7 +1460,6 @@
                 ]
             },
             "reservas": null,
-            "diasAtivos": 55,
             "interacoes": {
                 "acao": [
                     "14 - Brinde Aniversário",
@@ -1524,9 +1481,9 @@
         },
         {
             "cliques": {
-                "dias": 156,
-                "pessoas": 136,
-                "quantidade": 166,
+                "pessoas": 137,
+                "diasAtivos": 277,
+                "quantidade": 167,
                 "cliquesPorDia": 1.06,
                 "pessoasPorDia": 0.87,
                 "pessoasUltimos7dias": 10,
@@ -1537,7 +1494,6 @@
                 "quantidade": 1,
                 "quantidadePessoas": 5
             },
-            "diasAtivos": 157,
             "interacoes": {
                 "acao": [
                     "01 - Contato",
@@ -1555,13 +1511,13 @@
         },
         {
             "cliques": {
-                "dias": 56,
-                "pessoas": 107,
-                "quantidade": 133,
-                "cliquesPorDia": 2.38,
-                "pessoasPorDia": 1.91,
-                "pessoasUltimos7dias": 21,
-                "quantidadeUltimos7dias": 24
+                "pessoas": 111,
+                "diasAtivos": 277,
+                "quantidade": 137,
+                "cliquesPorDia": 2.45,
+                "pessoasPorDia": 1.98,
+                "pessoasUltimos7dias": 24,
+                "quantidadeUltimos7dias": 27
             },
             "reviews": {
                 "estrelas": 5.00,
@@ -1571,14 +1527,13 @@
                 ]
             },
             "reservas": null,
-            "diasAtivos": 56,
             "interacoes": {
                 "acao": [
                     "11 - Brinde Aniversário",
                     "01 - Delivery",
                     "16 - Instagram",
                     "10 - Endereço no Maps",
-                    "17 - Cardápio",
+                    "19 - Cardápio",
                     "04 - Chamar Motorista - Uber",
                     "04 - Horário"
                 ]
@@ -1589,13 +1544,13 @@
         },
         {
             "cliques": {
-                "dias": 99,
                 "pessoas": 95,
+                "diasAtivos": 277,
                 "quantidade": 115,
                 "cliquesPorDia": 1.16,
                 "pessoasPorDia": 0.96,
-                "pessoasUltimos7dias": 15,
-                "quantidadeUltimos7dias": 15
+                "pessoasUltimos7dias": 13,
+                "quantidadeUltimos7dias": 13
             },
             "reviews": {
                 "estrelas": 5.00,
@@ -1606,7 +1561,6 @@
                 ]
             },
             "reservas": null,
-            "diasAtivos": 99,
             "interacoes": {
                 "acao": [
                     "01 - Contato",
@@ -1624,8 +1578,8 @@
         },
         {
             "cliques": {
-                "dias": 95,
                 "pessoas": 95,
+                "diasAtivos": 275,
                 "quantidade": 122,
                 "cliquesPorDia": 1.28,
                 "pessoasPorDia": 1.00,
@@ -1634,7 +1588,6 @@
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 97,
             "interacoes": {
                 "acao": [
                     "36 - Instagram",
@@ -1649,8 +1602,8 @@
         },
         {
             "cliques": {
-                "dias": 96,
                 "pessoas": 90,
+                "diasAtivos": 277,
                 "quantidade": 107,
                 "cliquesPorDia": 1.11,
                 "pessoasPorDia": 0.94,
@@ -1659,7 +1612,6 @@
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 98,
             "interacoes": {
                 "acao": [
                     "29 - Instagram",
@@ -1675,13 +1627,44 @@
         },
         {
             "cliques": {
-                "dias": 116,
                 "pessoas": 88,
+                "diasAtivos": 277,
+                "quantidade": 105,
+                "cliquesPorDia": 0.73,
+                "pessoasPorDia": 0.62,
+                "pessoasUltimos7dias": 8,
+                "quantidadeUltimos7dias": 10
+            },
+            "reviews": {
+                "estrelas": 5.00,
+                "quantidade": 1,
+                "comentarios": [
+                    "5 - Surpreendente! Atendimento e pratos fantásticos. Local limpo, organizado e pratos servidos de forma impecável. "
+                ]
+            },
+            "reservas": null,
+            "interacoes": {
+                "acao": [
+                    "02 - Contato",
+                    "22 - Instagram",
+                    "05 - Endereço no Maps",
+                    "03 - Horário",
+                    "01 - Compartilhar"
+                ]
+            },
+            "qtdFavoritados": 0,
+            "valorInvestido": null,
+            "estabelecimento": "Yaki Sushi"
+        },
+        {
+            "cliques": {
+                "pessoas": 88,
+                "diasAtivos": 275,
                 "quantidade": 107,
                 "cliquesPorDia": 0.92,
                 "pessoasPorDia": 0.76,
-                "pessoasUltimos7dias": 4,
-                "quantidadeUltimos7dias": 4
+                "pessoasUltimos7dias": 3,
+                "quantidadeUltimos7dias": 3
             },
             "reviews": {
                 "estrelas": 4.00,
@@ -1691,7 +1674,6 @@
                 ]
             },
             "reservas": null,
-            "diasAtivos": 118,
             "interacoes": {
                 "acao": [
                     "07 - Instagram",
@@ -1707,52 +1689,19 @@
         },
         {
             "cliques": {
-                "dias": 141,
-                "pessoas": 87,
-                "quantidade": 104,
-                "cliquesPorDia": 0.74,
-                "pessoasPorDia": 0.62,
-                "pessoasUltimos7dias": 8,
-                "quantidadeUltimos7dias": 10
-            },
-            "reviews": {
-                "estrelas": 5.00,
-                "quantidade": 1,
-                "comentarios": [
-                    "5 - Surpreendente! Atendimento e pratos fantásticos. Local limpo, organizado e pratos servidos de forma impecável. "
-                ]
-            },
-            "reservas": null,
-            "diasAtivos": 143,
-            "interacoes": {
-                "acao": [
-                    "02 - Contato",
-                    "21 - Instagram",
-                    "05 - Endereço no Maps",
-                    "03 - Horário",
-                    "01 - Compartilhar"
-                ]
-            },
-            "qtdFavoritados": 0,
-            "valorInvestido": null,
-            "estabelecimento": "Yaki Sushi"
-        },
-        {
-            "cliques": {
-                "dias": 150,
                 "pessoas": 78,
+                "diasAtivos": 275,
                 "quantidade": 106,
                 "cliquesPorDia": 0.71,
                 "pessoasPorDia": 0.52,
-                "pessoasUltimos7dias": 2,
-                "quantidadeUltimos7dias": 2
+                "pessoasUltimos7dias": 1,
+                "quantidadeUltimos7dias": 1
             },
             "reviews": null,
             "reservas": {
                 "quantidade": 1,
                 "quantidadePessoas": 4
             },
-            "diasAtivos": 152,
             "interacoes": {
                 "acao": [
                     "01 - Contato",
@@ -1767,8 +1716,37 @@
         },
         {
             "cliques": {
-                "dias": 94,
+                "pessoas": 77,
+                "diasAtivos": 277,
+                "quantidade": 117,
+                "cliquesPorDia": 1.67,
+                "pessoasPorDia": 1.10,
+                "pessoasUltimos7dias": 14,
+                "quantidadeUltimos7dias": 18
+            },
+            "reviews": null,
+            "reservas": null,
+            "interacoes": {
+                "acao": [
+                    "02 - Botão de ação Participar do sorteio",
+                    "06 - Botão de ação Reservar mesa",
+                    "03 - Botão de ação Reserve Sua mesa Aqui!",
+                    "03 - Contato",
+                    "12 - Instagram",
+                    "07 - Endereço no Maps",
+                    "09 - Cardápio",
+                    "05 - Horário",
+                    "01 - Tour"
+                ]
+            },
+            "qtdFavoritados": 2,
+            "valorInvestido": null,
+            "estabelecimento": "Otto Gastro Bar"
+        },
+        {
+            "cliques": {
                 "pessoas": 76,
+                "diasAtivos": 277,
                 "quantidade": 100,
                 "cliquesPorDia": 1.06,
                 "pessoasPorDia": 0.81,
@@ -1784,7 +1762,6 @@
                 ]
             },
             "reservas": null,
-            "diasAtivos": 94,
             "interacoes": {
                 "acao": [
                     "08 - Brinde Aniversário",
@@ -1802,43 +1779,13 @@
         },
         {
             "cliques": {
-                "dias": 68,
-                "pessoas": 74,
-                "quantidade": 114,
-                "cliquesPorDia": 1.68,
-                "pessoasPorDia": 1.09,
-                "pessoasUltimos7dias": 14,
-                "quantidadeUltimos7dias": 18
-            },
-            "reviews": null,
-            "reservas": null,
-            "diasAtivos": 70,
-            "interacoes": {
-                "acao": [
-                    "02 - Botão de ação Participar do sorteio",
-                    "06 - Botão de ação Reservar mesa",
-                    "03 - Botão de ação Reserve Sua mesa Aqui!",
-                    "03 - Contato",
-                    "12 - Instagram",
-                    "07 - Endereço no Maps",
-                    "05 - Cardápio",
-                    "05 - Horário",
-                    "01 - Tour"
-                ]
-            },
-            "qtdFavoritados": 2,
-            "valorInvestido": null,
-            "estabelecimento": "Otto Gastro Bar"
-        },
-        {
-            "cliques": {
-                "dias": 38,
-                "pessoas": 63,
-                "quantidade": 87,
-                "cliquesPorDia": 2.29,
-                "pessoasPorDia": 1.66,
-                "pessoasUltimos7dias": 22,
-                "quantidadeUltimos7dias": 30
+                "pessoas": 67,
+                "diasAtivos": 278,
+                "quantidade": 91,
+                "cliquesPorDia": 2.33,
+                "pessoasPorDia": 1.72,
+                "pessoasUltimos7dias": 25,
+                "quantidadeUltimos7dias": 33
             },
             "reviews": {
                 "estrelas": 5.00,
@@ -1848,13 +1795,12 @@
                 ]
             },
             "reservas": null,
-            "diasAtivos": 38,
             "interacoes": {
                 "acao": [
                     "05 - Brinde Aniversário",
                     "01 - Contato",
                     "01 - Delivery",
-                    "11 - Instagram",
+                    "12 - Instagram",
                     "04 - Endereço no Maps",
                     "04 - Horário",
                     "01 - Compartilhar",
@@ -1868,12 +1814,12 @@
         },
         {
             "cliques": {
-                "dias": 34,
-                "pessoas": 60,
-                "quantidade": 74,
-                "cliquesPorDia": 2.18,
-                "pessoasPorDia": 1.76,
-                "pessoasUltimos7dias": 13,
+                "pessoas": 63,
+                "diasAtivos": 278,
+                "quantidade": 77,
+                "cliquesPorDia": 2.14,
+                "pessoasPorDia": 1.75,
+                "pessoasUltimos7dias": 14,
                 "quantidadeUltimos7dias": 15
             },
             "reviews": {
@@ -1884,7 +1830,6 @@
                 ]
             },
             "reservas": null,
-            "diasAtivos": 35,
             "interacoes": {
                 "acao": [
                     "01 - Delivery",
@@ -1896,19 +1841,19 @@
                     "01 - Tour"
                 ]
             },
-            "qtdFavoritados": 3,
+            "qtdFavoritados": 4,
             "valorInvestido": null,
             "estabelecimento": "Frittas & Cia"
         },
         {
             "cliques": {
-                "dias": 97,
                 "pessoas": 44,
+                "diasAtivos": 276,
                 "quantidade": 51,
                 "cliquesPorDia": 0.53,
                 "pessoasPorDia": 0.45,
-                "pessoasUltimos7dias": 4,
-                "quantidadeUltimos7dias": 5
+                "pessoasUltimos7dias": 3,
+                "quantidadeUltimos7dias": 4
             },
             "reviews": {
                 "estrelas": 5.00,
@@ -1918,7 +1863,6 @@
                 ]
             },
             "reservas": null,
-            "diasAtivos": 98,
             "interacoes": {
                 "acao": [
                     "01 - Contato",
@@ -1935,8 +1879,8 @@
         },
         {
             "cliques": {
-                "dias": 23,
                 "pessoas": 37,
+                "diasAtivos": 276,
                 "quantidade": 57,
                 "cliquesPorDia": 2.48,
                 "pessoasPorDia": 1.61,
@@ -1945,7 +1889,6 @@
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 24,
             "interacoes": {
                 "acao": [
                     "04 - Brinde Aniversário",
@@ -1962,8 +1905,8 @@
         },
         {
             "cliques": {
-                "dias": 99,
                 "pessoas": 35,
+                "diasAtivos": 275,
                 "quantidade": 40,
                 "cliquesPorDia": 0.40,
                 "pessoasPorDia": 0.35,
@@ -1978,7 +1921,6 @@
                 ]
             },
             "reservas": null,
-            "diasAtivos": 101,
             "interacoes": {
                 "acao": [
                     "02 - Contato",
@@ -1995,17 +1937,16 @@
         },
         {
             "cliques": {
-                "dias": 69,
                 "pessoas": 31,
+                "diasAtivos": 276,
                 "quantidade": 38,
                 "cliquesPorDia": 0.55,
                 "pessoasPorDia": 0.45,
-                "pessoasUltimos7dias": 3,
-                "quantidadeUltimos7dias": 3
+                "pessoasUltimos7dias": 2,
+                "quantidadeUltimos7dias": 2
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 70,
             "interacoes": {
                 "acao": [
                     "01 - Contato",
@@ -2020,17 +1961,16 @@
         },
         {
             "cliques": {
-                "dias": 10,
                 "pessoas": 18,
+                "diasAtivos": 275,
                 "quantidade": 21,
                 "cliquesPorDia": 2.10,
                 "pessoasPorDia": 1.80,
-                "pessoasUltimos7dias": 8,
-                "quantidadeUltimos7dias": 8
+                "pessoasUltimos7dias": 6,
+                "quantidadeUltimos7dias": 6
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 12,
             "interacoes": {
                 "acao": [
                     "10 - Cardápio"
@@ -2042,17 +1982,16 @@
         },
         {
             "cliques": {
-                "dias": 39,
-                "pessoas": 14,
-                "quantidade": 15,
-                "cliquesPorDia": 0.38,
-                "pessoasPorDia": 0.36,
+                "pessoas": 15,
+                "diasAtivos": 277,
+                "quantidade": 16,
+                "cliquesPorDia": 0.39,
+                "pessoasPorDia": 0.37,
                 "pessoasUltimos7dias": 3,
                 "quantidadeUltimos7dias": 3
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 41,
             "interacoes": {
                 "acao": [
                     "02 - Instagram",
@@ -2066,22 +2005,22 @@
         },
         {
             "cliques": {
-                "dias": 21,
-                "pessoas": 14,
-                "quantidade": 20,
+                "pessoas": 15,
+                "diasAtivos": 277,
+                "quantidade": 21,
                 "cliquesPorDia": 0.95,
-                "pessoasPorDia": 0.67,
-                "pessoasUltimos7dias": 4,
-                "quantidadeUltimos7dias": 4
+                "pessoasPorDia": 0.68,
+                "pessoasUltimos7dias": 5,
+                "quantidadeUltimos7dias": 5
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 22,
             "interacoes": {
                 "acao": [
                     "01 - Botão de ação Participar do sorteio",
                     "01 - Contato",
                     "01 - Delivery",
+                    "01 - Instagram",
                     "01 - Horário",
                     "01 - Compartilhar",
                     "01 - Tour"
@@ -2093,8 +2032,8 @@
         },
         {
             "cliques": {
-                "dias": 258,
                 "pessoas": 10,
+                "diasAtivos": 276,
                 "quantidade": 14,
                 "cliquesPorDia": 0.05,
                 "pessoasPorDia": 0.04,
@@ -2103,7 +2042,6 @@
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 259,
             "interacoes": {
                 "acao": [
                     "01 - Contato",
@@ -2118,8 +2056,8 @@
         },
         {
             "cliques": {
-                "dias": 4,
                 "pessoas": 7,
+                "diasAtivos": 275,
                 "quantidade": 10,
                 "cliquesPorDia": 2.50,
                 "pessoasPorDia": 1.75,
@@ -2128,7 +2066,6 @@
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 6,
             "interacoes": {
                 "acao": [
                     "01 - Endereço no Maps"
@@ -2140,8 +2077,8 @@
         },
         {
             "cliques": {
-                "dias": 4,
                 "pessoas": 4,
+                "diasAtivos": 275,
                 "quantidade": 4,
                 "cliquesPorDia": 1.00,
                 "pessoasPorDia": 1.00,
@@ -2150,7 +2087,6 @@
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 6,
             "interacoes": null,
             "qtdFavoritados": 0,
             "valorInvestido": null,
@@ -2158,8 +2094,8 @@
         },
         {
             "cliques": {
-                "dias": 3,
                 "pessoas": 4,
+                "diasAtivos": 275,
                 "quantidade": 4,
                 "cliquesPorDia": 1.33,
                 "pessoasPorDia": 1.33,
@@ -2168,7 +2104,6 @@
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 6,
             "interacoes": null,
             "qtdFavoritados": 0,
             "valorInvestido": null,
@@ -2176,23 +2111,22 @@
         },
         {
             "cliques": {
-                "dias": 0,
-                "pessoas": 3,
-                "quantidade": 4,
-                "cliquesPorDia": null,
-                "pessoasPorDia": null,
-                "pessoasUltimos7dias": 3,
-                "quantidadeUltimos7dias": 4
+                "pessoas": 4,
+                "diasAtivos": 277,
+                "quantidade": 5,
+                "cliquesPorDia": 5.00,
+                "pessoasPorDia": 4.00,
+                "pessoasUltimos7dias": 4,
+                "quantidadeUltimos7dias": 5
             },
             "reviews": null,
             "reservas": null,
-            "diasAtivos": 1,
             "interacoes": {
                 "acao": [
                     "01 - Contato",
                     "01 - Instagram",
                     "01 - Endereço no Maps",
-                    "06 - Cardápio",
+                    "07 - Cardápio",
                     "02 - Horário"
                 ]
             },
