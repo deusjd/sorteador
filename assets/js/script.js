@@ -1,6 +1,3 @@
-// Habilitar validação cpf
-//habilitar sorteio no memso dia cpf
-
 window.onload = function() {
   document.getElementById("rulesPopup").style.display = "flex";
   var campoCPF = document.getElementById("cpf");
@@ -25,10 +22,10 @@ function validateForm() {
   var cpf = document.getElementById("cpf").value;
   var agreeTerms = document.getElementById("agreeTerms").checked;
   
- // Adiciona a chamada para a função de validação de CPF
- // if (!validaCPF(cpf)) {
- //   alert("Por favor, insira um CPF válido.");
- //   return; // Interrompe a execução se o CPF for inválido
+//Adiciona a chamada para a função de validação de CPF
+//  if (!validaCPF(cpf)) {
+//    alert("Por favor, insira um CPF válido.");
+//    return; // Interrompe a execução se o CPF for inválido
 //  }
 
   // Verifica se o CPF está preenchido e o checkbox marcado
@@ -85,8 +82,7 @@ function salvarDadosSorteio(cpf, numeroDoDia, numeroSorteado, resultado) {
 }
 
 function enviarMensagemDiscord(cpf, numeroDoDia, numeroSorteado, resultado, mensagem_result) {
-  const webhookUrl_nao_ganhou = "https://discord.com/api/webhooks/1214164460198174821/czAvUIv8OIY4LDL1eCXWEBUO-MG2xe299tjpI6d0CWQEHX3Dr5VmaWy8v2v4CkStew3g";
-  const webhooks_ganhou = "https://discord.com/api/webhooks/1214155641002922015/oXZ91DU401E87kK-HRslmLH0ETFrBv_bDnu4DZy5m3O6gVHy0X3PUgXLNSJMbnzLC72Z"
+  const webhookUrl = "https://discord.com/api/webhooks/1221818185339244644/o7zDnm4zvILaQNt4tSQW1M5pC-ldYWSQI1g9YhstlLp3ZeI8KiyMLS8F8JkMD8MMB8vM"
   const mensagem = `
   🍀 Sorteio realizado
   | CPF: ${cpf}
@@ -94,13 +90,6 @@ function enviarMensagemDiscord(cpf, numeroDoDia, numeroSorteado, resultado, mens
   | Número Sorteado: ${numeroSorteado} 
   | Resultado: ${resultado}
   | Mensagem: ${mensagem_result}`;
-
-
-  if(resultado === "Ganhou") {
-    webhookUrl = webhooks_ganhou;
-  } else {
-    webhookUrl = webhookUrl_nao_ganhou;
-  }
 
   fetch(webhookUrl, {
       method: 'POST',
@@ -120,10 +109,10 @@ function gerarNumeroDoDia(cpf) {
   var chaveSorteio = 'sorteio-' + cpf + '-' + dataAtual.toISOString().split('T')[0]; // Cria uma chave única por dia para cada CPF
 
  // Verifica se o sorteio já foi realizado hoje para este CPF
-//  if (localStorage.getItem(chaveSorteio)) {
-//      alert("Você já participou do sorteio hoje!");
-//      return; // Interrompe a execução da função se o sorteio já foi realizado
-//  }
+  if (localStorage.getItem(chaveSorteio)) {
+      alert("Você já participou do sorteio hoje!");
+      return; // Interrompe a execução da função se o sorteio já foi realizado
+  }
 
   // Inicia a contagem regressiva de 5 segundos
   let counter = 5;
@@ -162,11 +151,24 @@ function mostrarResultadoSorteio(cpf) {
   var resultadoSorteio = numeroDoDia === result ? "Ganhou" : "Não ganhou";
 
   if (numeroDoDia === result){
-   
-    mensagem_result = "VOCÊ GANHOU 1 DRINK DE CAFÉ"
-    } else {
-      mensagem_result = "Não foi dessa vez. 😢"
-    }
+    mensagem_result = "VOCÊ GANHOU 1 DRINK DE CAFÉ";
+    
+    // Cria o botão WhatsApp
+    var botaoWhatsApp = document.createElement('a'); // Cria um elemento de link
+    botaoWhatsApp.href = "https://api.whatsapp.com/send?phone=5548996909196&text=Ol%C3%A1%20Favorito!%0AAcabei%20de%20ganhar%20um%20PREMIO%20no%20sorteio%20do%20APP,%20e%20gostaria%20de%20retirar%20meu%20Voucher."; // Configura o link
+    botaoWhatsApp.textContent = "Resgatar Voucher pelo WhatsApp"; // Define o texto do botão
+    botaoWhatsApp.target = "_blank"; // Garante que o link será aberto em uma nova aba
+    botaoWhatsApp.style.display = "block"; // Faz o botão aparecer como um bloco, para ficar em uma nova linha
+    botaoWhatsApp.className = "whatsapp-button"; // Adiciona uma classe para estilização (opcional)
+    
+    // Insere o botão após a mensagem de resultado
+    var divResultado = document.getElementById('result'); // Localiza a div onde a mensagem de resultado é exibida
+    divResultado.appendChild(botaoWhatsApp); // Adiciona o botão à div
+
+  } else {
+    mensagem_result = "Não foi dessa vez. 😢";
+    document.querySelector('#result > span').textContent = mensagem_result;
+  }
 
 
   // Atualiza o conteúdo da página com o resultado do sorteio

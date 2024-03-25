@@ -269,3 +269,14 @@ input[type="tel"] {
 .imagem-premio.desaparecer {
     animation: desaparecer 2s forwards;
 }
+
+.whatsapp-button {
+    background-color: #191a38;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block; /* Ou 'block' se preferir que o botão fique em uma linha separada */
+  }
