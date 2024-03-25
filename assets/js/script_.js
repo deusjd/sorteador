@@ -16,7 +16,7 @@ async function escolherConfiguracao() {
     const configSelecionada = configs[`sorteio${sorteioEscolhido}`];
 
     if (configSelecionada) {
-      configAtual = configSelecionada; --- 
+      configAtual = configSelecionada;
     } else {
       console.error("Parâmetro de sorteio inválido ou não fornecido. Definindo configuração padrão.");
       configAtual = null; // ou defina uma configuração padrão
