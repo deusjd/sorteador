@@ -156,7 +156,7 @@ function mostrarResultadoSorteio(cpf) {
     // Cria o botão WhatsApp
     var botaoWhatsApp = document.createElement('a'); // Cria um elemento de link
     botaoWhatsApp.href = "https://api.whatsapp.com/send?phone=5548996909196&text=Ol%C3%A1%20Favorito!%0AAcabei%20de%20ganhar%20um%20PREMIO%20no%20sorteio%20do%20APP,%20e%20gostaria%20de%20retirar%20meu%20Voucher."; // Configura o link
-    botaoWhatsApp.textContent = "Resgatar Voucher pelo WhatsApp"; // Define o texto do botão
+    botaoWhatsApp.textContent = "Clique aqui para resgatar seu premio"; // Define o texto do botão
     botaoWhatsApp.target = "_blank"; // Garante que o link será aberto em uma nova aba
     botaoWhatsApp.style.display = "block"; // Faz o botão aparecer como um bloco, para ficar em uma nova linha
     botaoWhatsApp.className = "whatsapp-button"; // Adiciona uma classe para estilização (opcional)
