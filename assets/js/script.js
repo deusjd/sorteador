@@ -193,7 +193,6 @@ function mostrarResultadoSorteio(cpf, configAtual) {
     
     // Insere o botão após a mensagem de resultado
     var divResultado = document.getElementById('result'); // Localiza a div onde a mensagem de resultado é exibida
-    divResultado.appendChild(botaoWhatsApp); // Adiciona o botão à div
 
   } else {
     mensagem_result = "Não foi dessa vez. 😢";
@@ -222,7 +221,8 @@ function mostrarResultadoSorteio(cpf, configAtual) {
             }, 2000); // Este valor deve coincidir com a duração da animação de desaparecimento
 
             //  mensagem_result = "VOCÊ GANHOU 1 DRINK DE CAFÉ"
-              document.querySelector('#result > span').textContent = mensagem_result;
+              document.querySelector('#result > span').textContent = "Você ganhou " + mensagem_result;
+              divResultado.appendChild(botaoWhatsApp); // Adiciona o botão à div
 
         }, 3000); // Ajuste este valor conforme necessário para o tempo antes da imagem começar a desaparecer
 
