@@ -13,7 +13,7 @@ async function escolherConfiguracao() {
     if (!response.ok) throw new Error('Falha ao carregar a configuração do sorteio.');
 
     const configs = await response.json();
-    const configSelecionada = configs[`sorteio${sorteioEscolhido}`];
+    const configSelecionada = configs[`sorteio${sorteioEscolhido}`]; --- 
 
     if (configSelecionada) {
       configAtual = configSelecionada;
