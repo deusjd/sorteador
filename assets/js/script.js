@@ -121,10 +121,13 @@ function enviarMensagemDiscord(cpf, numeroDoDia, numeroSorteado, resultado, mens
   const mensagem = `
   🍀 Sorteio realizado
   | CPF: ${cpf}
+  | Cliente: ${configAtual.id}
   | Número do Dia: ${numeroDoDia} 
   | Número Sorteado: ${numeroSorteado} 
   | Resultado: ${resultado}
-  | Mensagem: ${mensagem_result}`;
+  | Mensagem: ${mensagem_result}
+  #${cpf}#${configAtual.id}#${resultado}#${mensagem_result}`;
+
 
   fetch(webhookUrl, {
       method: 'POST',
@@ -182,7 +185,7 @@ function mostrarResultadoSorteio(cpf, configAtual) {
     
     // Cria o botão WhatsApp
     var botaoWhatsApp = document.createElement('a'); // Cria um elemento de link
-    botaoWhatsApp.href = "https://api.whatsapp.com/send?phone=5548996909196&text=Ol%C3%A1%20Favorito!%0AAcabei%20de%20ganhar%20um%20PREMIO%20no%20sorteio%20do%20APP,%20e%20gostaria%20de%20retirar%20meu%20Voucher."; // Configura o link
+    botaoWhatsApp.href = `https://api.whatsapp.com/send?phone=5548996909196&text=Ol%C3%A1%20Favorito!%0AAcabei%20de%20ganhar%20um%20${configAtual.premio}%20no%20sorteio%20do%20${configAtual.id},%20e%20gostaria%20de%20retirar%20meu%20voucher.`; // Configura o link
     botaoWhatsApp.textContent = "Clique aqui para resgatar seu premio"; // Define o texto do botão
     botaoWhatsApp.target = "_blank"; // Garante que o link será aberto em uma nova aba
     botaoWhatsApp.style.display = "block"; // Faz o botão aparecer como um bloco, para ficar em uma nova linha
