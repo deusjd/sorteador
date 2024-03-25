@@ -1,0 +1,12 @@
+{
+    "sorteioPullBeer": {
+      "id": "sorteio1",
+      "maxNumero": 1,
+      "premio": "1 Drink de Café"
+    },
+    "sorteioNoir": {
+      "id": "sorteio2",
+      "maxNumero": 1,
+      "premio": "1 Bolo de cenoura"
+    }
+}

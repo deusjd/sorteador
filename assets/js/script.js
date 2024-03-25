@@ -1,4 +1,35 @@
-window.onload = function() {
+function obterParametroSorteioDaURL() {
+  const parametrosURL = new URLSearchParams(window.location.search);
+  return parametrosURL.get('sorteio'); // 'sorteio' é o nome do parâmetro na URL
+}
+
+let configAtual;
+
+async function escolherConfiguracao() {
+  const sorteioEscolhido = obterParametroSorteioDaURL();
+
+  try {
+    const response = await fetch('assets/json/configs.json'); // Atualize com o caminho correto do arquivo
+    if (!response.ok) throw new Error('Falha ao carregar a configuração do sorteio.');
+
+    const configs = await response.json();
+    const configSelecionada = configs[`sorteio${sorteioEscolhido}`];
+
+    if (configSelecionada) {
+      configAtual = configSelecionada;
+    } else {
+      console.error("Parâmetro de sorteio inválido ou não fornecido. Definindo configuração padrão.");
+      configAtual = null; // ou defina uma configuração padrão
+    }
+  } catch (error) {
+    console.error("Erro ao carregar configurações do sorteio:", error);
+    configAtual = null; // ou defina uma configuração padrão em caso de erro
+  }
+}
+
+
+window.onload = async function() {
+  await escolherConfiguracao();
   document.getElementById("rulesPopup").style.display = "flex";
   var campoCPF = document.getElementById("cpf");
 
@@ -10,6 +41,9 @@ window.onload = function() {
 
 var popup = document.getElementById("rulesPopup");
 var span = document.getElementsByClassName("close")[0]; // O botão de fechar
+
+// Certifique-se de chamar escolherConfiguracao() em algum ponto antes de tentar realizar o sorteio
+// Por exemplo, você pode chamá-la dentro de window.onload ou com base em alguma ação do usuário
 
 // Previne o fechamento do pop-up clicando fora dele
 window.onclick = function(event) {
@@ -62,16 +96,17 @@ function gerarNumeroDoDia(cpf) {
     countdownElement.textContent = counter;
     if (counter <= 0) {
       clearInterval(intervalId); // Para a contagem regressiva
-      mostrarResultadoSorteio(cpf);
+      mostrarResultadoSorteio(cpf, configAtual);
       document.getElementById("countdownContainer").style.display = "none"; // Oculta o container após o término
     }
   }, 1000); // Atualiza a contagem a cada segundo
 }
 
-function salvarDadosSorteio(cpf, numeroDoDia, numeroSorteado, resultado) {
+function salvarDadosSorteio(cpf, numeroDoDia, numeroSorteado, resultado, configAtual) {
   let sorteios = JSON.parse(localStorage.getItem('sorteios')) || [];
   sorteios.push({
       cpf: cpf,
+      configAtual: configAtual,
       numeroDoDia: numeroDoDia,
       numeroSorteado: numeroSorteado,
       resultado: resultado,
@@ -106,7 +141,8 @@ function enviarMensagemDiscord(cpf, numeroDoDia, numeroSorteado, resultado, mens
 
 function gerarNumeroDoDia(cpf) {
   var dataAtual = new Date();
-  var chaveSorteio = 'sorteio-' + cpf + '-' + dataAtual.toISOString().split('T')[0]; // Cria uma chave única por dia para cada CPF
+  var chaveSorteio = 'sorteio-' + cpf + '-' + (configAtual ? configAtual.id : "padrao") + '-' + dataAtual.toISOString().split('T')[0];
+
 
  // Verifica se o sorteio já foi realizado hoje para este CPF
   if (localStorage.getItem(chaveSorteio)) {
@@ -126,32 +162,23 @@ function gerarNumeroDoDia(cpf) {
       if (counter <= 0) {
           clearInterval(intervalId); // Para a contagem regressiva
           countdownElement.style.display = "none"; // Oculta o contador
-          mostrarResultadoSorteio(cpf); // Chama a função para mostrar o resultado
+          mostrarResultadoSorteio(cpf, configAtual); // Chama a função para mostrar o resultado
           localStorage.setItem(chaveSorteio, true); // Marca que o sorteio foi realizado hoje para este CPF
       }
   }, 1000); // Atualiza a contagem a cada segundo.
 }
 
-function mostrarResultadoSorteio(cpf) {
+function mostrarResultadoSorteio(cpf, configAtual) {
   var dataAtual = new Date();
   var diaDoMes = dataAtual.getDate();
 
-  // Garantir que o número do dia esteja entre 0 e 10
-  // Como o dia do mês pode ser de 1 a 31, usamos o módulo (%) por 11 para obter um número entre 0 e 10
-  //var numeroDoDia = dataAtual.getDate() % 21; // Garante que esteja entre 0 e 10
-
-  var numeroDoDia = 1;// Math.floor(Math.random() * 8);
-
-  // Gerar um número aleatório entre 0 e 10
-  // Math.random() gera um número entre 0 (inclusivo) e 1 (exclusivo), então multiplicamos por 11
-  // para obter um número no intervalo [0, 11) e usamos Math.floor() para arredondar para baixo,
-  // resultando em um número inteiro entre 0 e 10
-  var result = 1;//Math.floor(Math.random() * 8);
+  var numeroDoDia = Math.floor(Math.random() * configAtual.maxNumero);
+  var result = Math.floor(Math.random() * configAtual.maxNumero);
 
   var resultadoSorteio = numeroDoDia === result ? "Ganhou" : "Não ganhou";
 
   if (numeroDoDia === result){
-    mensagem_result = "VOCÊ GANHOU 1 DRINK DE CAFÉ";
+    mensagem_result = configAtual.premio;
     
     // Cria o botão WhatsApp
     var botaoWhatsApp = document.createElement('a'); // Cria um elemento de link
@@ -240,3 +267,16 @@ function aplicarMascaraCPF(campo) {
 
   campo.value = valor;
 }
+
+
+const sorteio1Config = {
+  id: "sorteio1",
+  maxNumero: 1, // Intervalo de 0 a 20
+  premio: "1 Drink de Café"
+};
+
+const sorteio2Config = {
+  id: "sorteio2",
+  maxNumero: 1, // Intervalo de 0 a 10
+  premio: "1 Bolo de Chocolate"
+};
