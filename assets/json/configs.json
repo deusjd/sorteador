@@ -8,5 +8,10 @@
       "id": "Noir",
       "maxNumero": 1,
       "premio": "1 Bolo de cenoura"
+    },
+    "sorteio3": {
+    "id": "Otto",
+    "maxNumero": 1,
+    "premio": "1 Chopp Brahma"
     }
 }
